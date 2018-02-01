@@ -1,0 +1,35 @@
+resource:
+  signalform_dashboard:
+    # Top-level dashboard linking to all groups for ease of discovery
+    top_level_dashboard:
+      name: 'Service Dashboards'
+      dashboard_group: '$${signalform_dashboard_group.top_level_dashboard.id}'
+      chart:
+      - chart_id: '$${signalform_text_chart.project_links.id}'
+        width: 12
+        height: 2
+  signalform_dashboard_group:
+    $merge:
+      $flattenDeep:
+          # Per project dashboard groups
+        - $map: {$eval: projects}
+          each(project):
+            '${project.name}_metrics':
+              name: '${project.name} metrics'
+              description: 'Metrics for ${lowercase(project.name)}'
+        - top_level_dashboard:
+            name: 'taskcluster metrics'
+            description: 'Links to per-service dashboards'
+  signalform_text_chart:
+    project_links:
+      name: 'per-service dashboards'
+      description: 'Links to all per-service dashboards'
+      markdown:
+        $let:
+          links:
+            $map: {$eval: projects}
+            each(project): |
+               * [${project.name}](https://app.signalfx.com/#/dashboard/$${signalform_dashboard.${project.name}_api.id})
+
+        in: |
+          ${join(links, '')}

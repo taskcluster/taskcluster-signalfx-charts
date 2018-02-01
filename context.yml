@@ -1,0 +1,58 @@
+projects:
+  # NOTE: index will generate 'methods', 'exchanges' and 'exchangePrefix'
+  #       for project entries that specifies 'references'
+  - name: auth
+    prefix: taskcluster-auth # project given to tc-lib-monitor)
+    apiPrefix: api
+    publisherPrefix: publisher
+    references: [Auth, AuthEvents]
+  - name: aws-provisioner
+    prefix: aws-provisioner
+    apiPrefix: api
+    publisherPrefix: publisher
+    references: [AwsProvisioner, AwsProvisionerEvents]
+  - name: github
+    prefix: taskcluster-github
+    apiPrefix: api
+    publisherPrefix: publisher
+    references: [Github, GithubEvents]
+  - name: hooks
+    prefix: taskcluster-hooks
+    apiPrefix: api
+    publisherPrefix: publisher
+    references: [Hooks]
+  - name: index
+    prefix: taskcluster-index
+    apiPrefix: api
+    publisherPrefix: publisher
+    references: [Index]
+  - name: login
+    prefix: taskcluster-login
+    apiPrefix: api
+    publisherPrefix: publisher
+    references: [Login]
+  - name: notify
+    prefix: taskcluster-notify
+    apiPrefix: api
+    publisherPrefix: publisher
+    references: [Notify]
+  - name: purge-cache
+    prefix: purge-cache
+    apiPrefix: api
+    publisherPrefix: publisher
+    references: [PurgeCache, PurgeCacheEvents]
+  - name: queue
+    prefix: taskcluster-queue
+    apiPrefix: api
+    publisherPrefix: publisher
+    references: [Queue, QueueEvents]
+  - name: secrets
+    prefix: taskcluster-secrets
+    apiPrefix: api
+    publisherPrefix: publisher
+    references: [Secrets]
+  - name: tc-treeherder
+    prefix: tc-treeherder
+    apiPrefix: api
+    publisherPrefix: publisher
+    references: [TreeherderEvents]

@@ -1,0 +1,69 @@
+resource:
+  signalform_dashboard:
+    $merge:
+      $map: {$eval: projects}
+      each(project):
+        '${project.name}_pulse':
+          name: '${project.name} Pulse Publishing'
+          time_range: '-1d'
+          charts_resolution: 'highest'
+          dashboard_group: '$${signalform_dashboard_group.${project.name}_metrics.id}'
+          chart:
+            $map: {$eval: 'range(len(project.exchanges))'}
+            each(i):
+              chart_id: '$${signalform_time_chart.${project.name}_pulse_${project.exchanges[i]}.id}'
+              width: 12
+              height: 2
+              row: {$eval: 'i'}
+  signalform_time_chart:
+    $merge:
+      $flattenDeep:
+        $map: {$eval: projects}
+        each(project):
+          $map: {$eval: 'project.exchanges'}
+          each(exchange):
+            '${project.name}_pulse_${exchange}':
+              # taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-deleted.1h.p25
+              name: "${project.name} - ${exchange} publish duration / messages"
+              plot_type: LineChart
+              program_text: |
+                data("${project.prefix}.${project.publisherPrefix}.${project.exchangePrefix}${exchange}.5m.count", rollup="sum", extrapolation="zero").publish(label="messages")
+                data("${project.prefix}.${project.publisherPrefix}.${project.exchangePrefix}${exchange}.5m.max", rollup="max").publish(label="max")
+                data("${project.prefix}.${project.publisherPrefix}.${project.exchangePrefix}${exchange}.5m.p99", rollup="max").publish(label="p99")
+                data("${project.prefix}.${project.publisherPrefix}.${project.exchangePrefix}${exchange}.5m.p95", rollup="max").publish(label="p95")
+                data("${project.prefix}.${project.publisherPrefix}.${project.exchangePrefix}${exchange}.5m.p75", rollup="max").publish(label="p75")
+                data("${project.prefix}.${project.publisherPrefix}.${project.exchangePrefix}${exchange}.5m.p50", rollup="max").publish(label="p50")
+                data("${project.prefix}.${project.publisherPrefix}.${project.exchangePrefix}${exchange}.5m.p25", rollup="max").publish(label="p25")
+                data("${project.prefix}.${project.publisherPrefix}.${project.exchangePrefix}${exchange}.5m.min", rollup="min").publish(label="min")
+              show_data_markers: true
+              time_range: "-1d"
+              viz_options:
+              - axis: right
+                color: pink
+                label: messages
+              - axis: left
+                color: brown
+                label: max
+                plot_type: AreaChart
+              - axis: left
+                color: orange
+                label: p99
+              - axis: left
+                color: yellow
+                label: p95
+              - axis: left
+                color: green
+                label: p75
+              - axis: left
+                color: green
+                label: p50
+              - axis: left
+                color: green
+                label: p25
+              - axis: left
+                color: green
+                label: min
+              axis_left:
+                label: duration (ms)
+              axis_right:
+                label: messages

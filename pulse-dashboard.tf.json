@@ -1,0 +1,1455 @@
+{
+  "resource": {
+    "signalform_dashboard": {
+      "auth_pulse": {
+        "name": "auth Pulse Publishing",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.auth_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.auth_pulse_client-created.id}",
+            "width": 12,
+            "height": 2,
+            "row": 0
+          },
+          {
+            "chart_id": "${signalform_time_chart.auth_pulse_client-updated.id}",
+            "width": 12,
+            "height": 2,
+            "row": 1
+          },
+          {
+            "chart_id": "${signalform_time_chart.auth_pulse_client-deleted.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          },
+          {
+            "chart_id": "${signalform_time_chart.auth_pulse_role-created.id}",
+            "width": 12,
+            "height": 2,
+            "row": 3
+          },
+          {
+            "chart_id": "${signalform_time_chart.auth_pulse_role-updated.id}",
+            "width": 12,
+            "height": 2,
+            "row": 4
+          },
+          {
+            "chart_id": "${signalform_time_chart.auth_pulse_role-deleted.id}",
+            "width": 12,
+            "height": 2,
+            "row": 5
+          }
+        ]
+      },
+      "aws-provisioner_pulse": {
+        "name": "aws-provisioner Pulse Publishing",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.aws-provisioner_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.aws-provisioner_pulse_worker-type-created.id}",
+            "width": 12,
+            "height": 2,
+            "row": 0
+          },
+          {
+            "chart_id": "${signalform_time_chart.aws-provisioner_pulse_worker-type-updated.id}",
+            "width": 12,
+            "height": 2,
+            "row": 1
+          },
+          {
+            "chart_id": "${signalform_time_chart.aws-provisioner_pulse_worker-type-removed.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          }
+        ]
+      },
+      "github_pulse": {
+        "name": "github Pulse Publishing",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.github_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.github_pulse_pull-request.id}",
+            "width": 12,
+            "height": 2,
+            "row": 0
+          },
+          {
+            "chart_id": "${signalform_time_chart.github_pulse_push.id}",
+            "width": 12,
+            "height": 2,
+            "row": 1
+          },
+          {
+            "chart_id": "${signalform_time_chart.github_pulse_release.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          }
+        ]
+      },
+      "hooks_pulse": {
+        "name": "hooks Pulse Publishing",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.hooks_metrics.id}",
+        "chart": []
+      },
+      "index_pulse": {
+        "name": "index Pulse Publishing",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.index_metrics.id}",
+        "chart": []
+      },
+      "login_pulse": {
+        "name": "login Pulse Publishing",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.login_metrics.id}",
+        "chart": []
+      },
+      "notify_pulse": {
+        "name": "notify Pulse Publishing",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.notify_metrics.id}",
+        "chart": []
+      },
+      "purge-cache_pulse": {
+        "name": "purge-cache Pulse Publishing",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.purge-cache_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.purge-cache_pulse_purge-cache.id}",
+            "width": 12,
+            "height": 2,
+            "row": 0
+          }
+        ]
+      },
+      "queue_pulse": {
+        "name": "queue Pulse Publishing",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.queue_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.queue_pulse_task-defined.id}",
+            "width": 12,
+            "height": 2,
+            "row": 0
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_pulse_task-pending.id}",
+            "width": 12,
+            "height": 2,
+            "row": 1
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_pulse_task-running.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_pulse_artifact-created.id}",
+            "width": 12,
+            "height": 2,
+            "row": 3
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_pulse_task-completed.id}",
+            "width": 12,
+            "height": 2,
+            "row": 4
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_pulse_task-failed.id}",
+            "width": 12,
+            "height": 2,
+            "row": 5
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_pulse_task-exception.id}",
+            "width": 12,
+            "height": 2,
+            "row": 6
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_pulse_task-group-resolved.id}",
+            "width": 12,
+            "height": 2,
+            "row": 7
+          }
+        ]
+      },
+      "secrets_pulse": {
+        "name": "secrets Pulse Publishing",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.secrets_metrics.id}",
+        "chart": []
+      },
+      "tc-treeherder_pulse": {
+        "name": "tc-treeherder Pulse Publishing",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.tc-treeherder_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.tc-treeherder_pulse_jobs.id}",
+            "width": 12,
+            "height": 2,
+            "row": 0
+          }
+        ]
+      }
+    },
+    "signalform_time_chart": {
+      "auth_pulse_client-created": {
+        "name": "auth - client-created publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-created.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-created.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-created.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-created.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-created.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-created.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-created.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-created.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "auth_pulse_client-updated": {
+        "name": "auth - client-updated publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-updated.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-updated.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-updated.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-updated.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-updated.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-updated.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-updated.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-updated.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "auth_pulse_client-deleted": {
+        "name": "auth - client-deleted publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-deleted.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-deleted.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-deleted.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-deleted.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-deleted.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-deleted.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-deleted.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/client-deleted.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "auth_pulse_role-created": {
+        "name": "auth - role-created publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-created.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-created.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-created.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-created.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-created.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-created.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-created.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-created.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "auth_pulse_role-updated": {
+        "name": "auth - role-updated publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-updated.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-updated.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-updated.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-updated.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-updated.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-updated.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-updated.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-updated.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "auth_pulse_role-deleted": {
+        "name": "auth - role-deleted publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-deleted.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-deleted.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-deleted.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-deleted.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-deleted.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-deleted.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-deleted.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-auth.publisher.exchange/taskcluster-auth/v1/role-deleted.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "aws-provisioner_pulse_worker-type-created": {
+        "name": "aws-provisioner - worker-type-created publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-created.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-created.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-created.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-created.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-created.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-created.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-created.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-created.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "aws-provisioner_pulse_worker-type-updated": {
+        "name": "aws-provisioner - worker-type-updated publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-updated.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-updated.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-updated.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-updated.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-updated.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-updated.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-updated.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-updated.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "aws-provisioner_pulse_worker-type-removed": {
+        "name": "aws-provisioner - worker-type-removed publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-removed.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-removed.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-removed.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-removed.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-removed.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-removed.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-removed.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"aws-provisioner.publisher.exchange/taskcluster-aws-provisioner/v1/worker-type-removed.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "github_pulse_pull-request": {
+        "name": "github - pull-request publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/pull-request.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/pull-request.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/pull-request.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/pull-request.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/pull-request.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/pull-request.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/pull-request.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/pull-request.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "github_pulse_push": {
+        "name": "github - push publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/push.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/push.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/push.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/push.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/push.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/push.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/push.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/push.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "github_pulse_release": {
+        "name": "github - release publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/release.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/release.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/release.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/release.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/release.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/release.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/release.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-github.publisher.exchange/taskcluster-github/v1/release.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "purge-cache_pulse_purge-cache": {
+        "name": "purge-cache - purge-cache publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"purge-cache.publisher.exchange/taskcluster-purge-cache/v1/purge-cache.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"purge-cache.publisher.exchange/taskcluster-purge-cache/v1/purge-cache.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"purge-cache.publisher.exchange/taskcluster-purge-cache/v1/purge-cache.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"purge-cache.publisher.exchange/taskcluster-purge-cache/v1/purge-cache.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"purge-cache.publisher.exchange/taskcluster-purge-cache/v1/purge-cache.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"purge-cache.publisher.exchange/taskcluster-purge-cache/v1/purge-cache.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"purge-cache.publisher.exchange/taskcluster-purge-cache/v1/purge-cache.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"purge-cache.publisher.exchange/taskcluster-purge-cache/v1/purge-cache.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "queue_pulse_task-defined": {
+        "name": "queue - task-defined publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-defined.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-defined.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-defined.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-defined.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-defined.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-defined.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-defined.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-defined.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "queue_pulse_task-pending": {
+        "name": "queue - task-pending publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-pending.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-pending.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-pending.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-pending.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-pending.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-pending.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-pending.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-pending.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "queue_pulse_task-running": {
+        "name": "queue - task-running publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-running.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-running.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-running.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-running.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-running.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-running.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-running.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-running.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "queue_pulse_artifact-created": {
+        "name": "queue - artifact-created publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/artifact-created.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/artifact-created.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/artifact-created.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/artifact-created.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/artifact-created.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/artifact-created.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/artifact-created.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/artifact-created.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "queue_pulse_task-completed": {
+        "name": "queue - task-completed publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-completed.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-completed.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-completed.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-completed.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-completed.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-completed.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-completed.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-completed.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "queue_pulse_task-failed": {
+        "name": "queue - task-failed publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-failed.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-failed.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-failed.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-failed.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-failed.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-failed.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-failed.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-failed.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "queue_pulse_task-exception": {
+        "name": "queue - task-exception publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-exception.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-exception.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-exception.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-exception.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-exception.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-exception.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-exception.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-exception.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "queue_pulse_task-group-resolved": {
+        "name": "queue - task-group-resolved publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-group-resolved.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-group-resolved.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-group-resolved.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-group-resolved.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-group-resolved.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-group-resolved.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-group-resolved.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-queue.publisher.exchange/taskcluster-queue/v1/task-group-resolved.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      },
+      "tc-treeherder_pulse_jobs": {
+        "name": "tc-treeherder - jobs publish duration / messages",
+        "plot_type": "LineChart",
+        "program_text": "data(\"tc-treeherder.publisher.exchange/taskcluster-treeherder/v1/jobs.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"messages\")\ndata(\"tc-treeherder.publisher.exchange/taskcluster-treeherder/v1/jobs.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"tc-treeherder.publisher.exchange/taskcluster-treeherder/v1/jobs.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"tc-treeherder.publisher.exchange/taskcluster-treeherder/v1/jobs.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"tc-treeherder.publisher.exchange/taskcluster-treeherder/v1/jobs.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"tc-treeherder.publisher.exchange/taskcluster-treeherder/v1/jobs.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"tc-treeherder.publisher.exchange/taskcluster-treeherder/v1/jobs.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"tc-treeherder.publisher.exchange/taskcluster-treeherder/v1/jobs.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "messages"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "messages"
+        }
+      }
+    }
+  }
+}

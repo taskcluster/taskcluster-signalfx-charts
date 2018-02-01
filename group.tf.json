@@ -1,0 +1,74 @@
+{
+  "resource": {
+    "signalform_dashboard": {
+      "top_level_dashboard": {
+        "name": "Service Dashboards",
+        "dashboard_group": "${signalform_dashboard_group.top_level_dashboard.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_text_chart.project_links.id}",
+            "width": 12,
+            "height": 2
+          }
+        ]
+      }
+    },
+    "signalform_dashboard_group": {
+      "auth_metrics": {
+        "name": "auth metrics",
+        "description": "Metrics for auth"
+      },
+      "aws-provisioner_metrics": {
+        "name": "aws-provisioner metrics",
+        "description": "Metrics for aws-provisioner"
+      },
+      "github_metrics": {
+        "name": "github metrics",
+        "description": "Metrics for github"
+      },
+      "hooks_metrics": {
+        "name": "hooks metrics",
+        "description": "Metrics for hooks"
+      },
+      "index_metrics": {
+        "name": "index metrics",
+        "description": "Metrics for index"
+      },
+      "login_metrics": {
+        "name": "login metrics",
+        "description": "Metrics for login"
+      },
+      "notify_metrics": {
+        "name": "notify metrics",
+        "description": "Metrics for notify"
+      },
+      "purge-cache_metrics": {
+        "name": "purge-cache metrics",
+        "description": "Metrics for purge-cache"
+      },
+      "queue_metrics": {
+        "name": "queue metrics",
+        "description": "Metrics for queue"
+      },
+      "secrets_metrics": {
+        "name": "secrets metrics",
+        "description": "Metrics for secrets"
+      },
+      "tc-treeherder_metrics": {
+        "name": "tc-treeherder metrics",
+        "description": "Metrics for tc-treeherder"
+      },
+      "top_level_dashboard": {
+        "name": "taskcluster metrics",
+        "description": "Links to per-service dashboards"
+      }
+    },
+    "signalform_text_chart": {
+      "project_links": {
+        "name": "per-service dashboards",
+        "description": "Links to all per-service dashboards",
+        "markdown": "* [auth](https://app.signalfx.com/#/dashboard/${signalform_dashboard.auth_api.id})\n* [aws-provisioner](https://app.signalfx.com/#/dashboard/${signalform_dashboard.aws-provisioner_api.id})\n* [github](https://app.signalfx.com/#/dashboard/${signalform_dashboard.github_api.id})\n* [hooks](https://app.signalfx.com/#/dashboard/${signalform_dashboard.hooks_api.id})\n* [index](https://app.signalfx.com/#/dashboard/${signalform_dashboard.index_api.id})\n* [login](https://app.signalfx.com/#/dashboard/${signalform_dashboard.login_api.id})\n* [notify](https://app.signalfx.com/#/dashboard/${signalform_dashboard.notify_api.id})\n* [purge-cache](https://app.signalfx.com/#/dashboard/${signalform_dashboard.purge-cache_api.id})\n* [queue](https://app.signalfx.com/#/dashboard/${signalform_dashboard.queue_api.id})\n* [secrets](https://app.signalfx.com/#/dashboard/${signalform_dashboard.secrets_api.id})\n* [tc-treeherder](https://app.signalfx.com/#/dashboard/${signalform_dashboard.tc-treeherder_api.id})\n\n"
+      }
+    }
+  }
+}

@@ -37,7 +37,7 @@ cmds.transform = () => {
       const exchanges = _.flatten(refs.map(r =>
         r.entries.filter(e => e.type === 'topic-exchange').map(e => e.exchange)
       ));
-      return Object.assign({}, project, {
+      return Object.assign({}, config.defaults, project, {
         methods, exchanges,
         exchangePrefix: refs.map(r => r.exchangePrefix).filter(e => !!e)[0] || '',
       });

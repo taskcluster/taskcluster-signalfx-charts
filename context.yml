@@ -1,88 +1,80 @@
+defaults:
+  # Defaults applied to all projects, each project config can overwrite these values
+  apiPrefix: api
+  publisherPrefix: publisher
+  processPrefix: process
 projects:
   # NOTE: index will generate 'methods', 'exchanges' and 'exchangePrefix'
   #       for project entries that specifies 'references'
   - name: auth
     prefix: taskcluster-auth # project given to tc-lib-monitor)
-    apiPrefix: api
-    publisherPrefix: publisher
-    references: [Auth, AuthEvents]
-    processPrefix: process
+    references:
+      - Auth
+      - AuthEvents
     procs:
       - server
       - expire-sentry
       - purge-expired-clients
   - name: aws-provisioner
     prefix: aws-provisioner
-    apiPrefix: api
-    publisherPrefix: publisher
-    references: [AwsProvisioner, AwsProvisionerEvents]
-    processPrefix: process
+    references:
+      - AwsProvisioner
+      - AwsProvisionerEvents
     procs:
       - server
       - provisioner
   - name: github
     prefix: taskcluster-github
-    apiPrefix: api
-    publisherPrefix: publisher
-    references: [Github, GithubEvents]
-    processPrefix: process
+    references:
+      - Github
+      - GithubEvents
     procs:
       - server
       - worker
       - syncInstallations
   - name: hooks
     prefix: taskcluster-hooks
-    apiPrefix: api
-    publisherPrefix: publisher
-    references: [Hooks]
-    processPrefix: process
+    references:
+      - Hooks
     procs:
       - server
       - scheduler
   - name: index
     prefix: taskcluster-index
-    apiPrefix: api
-    publisherPrefix: publisher
-    references: [Index]
-    processPrefix: process
+    references:
+      - Index
     procs:
       - server
       - handlers
       - expire
   - name: login
     prefix: taskcluster-login
-    apiPrefix: api
-    publisherPrefix: publisher
-    references: [Login]
-    processPrefix: process
+    references:
+      - Login
     procs:
       - server
       - scanner
   - name: notify
     prefix: taskcluster-notify
-    apiPrefix: api
-    publisherPrefix: publisher
-    references: [Notify]
-    processPrefix: process
+    references:
+      - Notify
     procs:
       - server
       - irc
       - handler
   - name: purge-cache
     prefix: purge-cache
-    apiPrefix: api
-    publisherPrefix: publisher
-    references: [PurgeCache, PurgeCacheEvents]
-    processPrefix: process
+    references:
+      - PurgeCache
+      - PurgeCacheEvents
     procs:
       - server
       - expire-cache-purges
   - name: queue
     prefix: taskcluster-queue
-    apiPrefix: api
-    publisherPrefix: publisher
-    references: [Queue, QueueEvents]
-    processPrefix: process
+    references:
+      - Queue
+      - QueueEvents
     procs:
       - server
       - claim-reaper
@@ -99,17 +91,13 @@ projects:
       - expire-worker-info
   - name: secrets
     prefix: taskcluster-secrets
-    apiPrefix: api
-    publisherPrefix: publisher
-    references: [Secrets]
-    processPrefix: process
+    references:
+      - Secrets
     procs:
       - server
   - name: tc-treeherder
     prefix: tc-treeherder
-    apiPrefix: api
-    publisherPrefix: publisher
-    references: [TreeherderEvents]
-    processPrefix: process
+    references:
+      - TreeherderEvents
     procs:
       - server

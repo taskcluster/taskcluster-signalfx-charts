@@ -11,37 +11,37 @@
             "chart_id": "${signalform_time_chart.auth_pulse_client-created.id}",
             "width": 12,
             "height": 2,
-            "row": 0
+            "row": 2
           },
           {
             "chart_id": "${signalform_time_chart.auth_pulse_client-updated.id}",
             "width": 12,
             "height": 2,
-            "row": 1
+            "row": 4
           },
           {
             "chart_id": "${signalform_time_chart.auth_pulse_client-deleted.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 6
           },
           {
             "chart_id": "${signalform_time_chart.auth_pulse_role-created.id}",
             "width": 12,
             "height": 2,
-            "row": 3
+            "row": 8
           },
           {
             "chart_id": "${signalform_time_chart.auth_pulse_role-updated.id}",
             "width": 12,
             "height": 2,
-            "row": 4
+            "row": 10
           },
           {
             "chart_id": "${signalform_time_chart.auth_pulse_role-deleted.id}",
             "width": 12,
             "height": 2,
-            "row": 5
+            "row": 12
           }
         ]
       },
@@ -55,19 +55,19 @@
             "chart_id": "${signalform_time_chart.aws-provisioner_pulse_worker-type-created.id}",
             "width": 12,
             "height": 2,
-            "row": 0
+            "row": 2
           },
           {
             "chart_id": "${signalform_time_chart.aws-provisioner_pulse_worker-type-updated.id}",
             "width": 12,
             "height": 2,
-            "row": 1
+            "row": 4
           },
           {
             "chart_id": "${signalform_time_chart.aws-provisioner_pulse_worker-type-removed.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 6
           }
         ]
       },
@@ -81,19 +81,19 @@
             "chart_id": "${signalform_time_chart.github_pulse_pull-request.id}",
             "width": 12,
             "height": 2,
-            "row": 0
+            "row": 2
           },
           {
             "chart_id": "${signalform_time_chart.github_pulse_push.id}",
             "width": 12,
             "height": 2,
-            "row": 1
+            "row": 4
           },
           {
             "chart_id": "${signalform_time_chart.github_pulse_release.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 6
           }
         ]
       },
@@ -135,7 +135,7 @@
             "chart_id": "${signalform_time_chart.purge-cache_pulse_purge-cache.id}",
             "width": 12,
             "height": 2,
-            "row": 0
+            "row": 2
           }
         ]
       },
@@ -149,49 +149,49 @@
             "chart_id": "${signalform_time_chart.queue_pulse_task-defined.id}",
             "width": 12,
             "height": 2,
-            "row": 0
+            "row": 2
           },
           {
             "chart_id": "${signalform_time_chart.queue_pulse_task-pending.id}",
             "width": 12,
             "height": 2,
-            "row": 1
+            "row": 4
           },
           {
             "chart_id": "${signalform_time_chart.queue_pulse_task-running.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 6
           },
           {
             "chart_id": "${signalform_time_chart.queue_pulse_artifact-created.id}",
             "width": 12,
             "height": 2,
-            "row": 3
+            "row": 8
           },
           {
             "chart_id": "${signalform_time_chart.queue_pulse_task-completed.id}",
             "width": 12,
             "height": 2,
-            "row": 4
+            "row": 10
           },
           {
             "chart_id": "${signalform_time_chart.queue_pulse_task-failed.id}",
             "width": 12,
             "height": 2,
-            "row": 5
+            "row": 12
           },
           {
             "chart_id": "${signalform_time_chart.queue_pulse_task-exception.id}",
             "width": 12,
             "height": 2,
-            "row": 6
+            "row": 14
           },
           {
             "chart_id": "${signalform_time_chart.queue_pulse_task-group-resolved.id}",
             "width": 12,
             "height": 2,
-            "row": 7
+            "row": 16
           }
         ]
       },
@@ -212,7 +212,7 @@
             "chart_id": "${signalform_time_chart.tc-treeherder_pulse_jobs.id}",
             "width": 12,
             "height": 2,
-            "row": 0
+            "row": 2
           }
         ]
       }

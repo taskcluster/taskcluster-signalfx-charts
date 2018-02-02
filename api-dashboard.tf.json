@@ -8,172 +8,178 @@
         "dashboard_group": "${signalform_dashboard_group.auth_metrics.id}",
         "chart": [
           {
-            "chart_id": "${signalform_time_chart.auth_listClients.id}",
+            "chart_id": "${signalform_time_chart.auth_api_all.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 1
           },
           {
-            "chart_id": "${signalform_time_chart.auth_client.id}",
+            "chart_id": "${signalform_time_chart.auth_listClients.id}",
             "width": 12,
             "height": 2,
             "row": 4
           },
           {
-            "chart_id": "${signalform_time_chart.auth_createClient.id}",
+            "chart_id": "${signalform_time_chart.auth_client.id}",
             "width": 12,
             "height": 2,
             "row": 6
           },
           {
-            "chart_id": "${signalform_time_chart.auth_resetAccessToken.id}",
+            "chart_id": "${signalform_time_chart.auth_createClient.id}",
             "width": 12,
             "height": 2,
             "row": 8
           },
           {
-            "chart_id": "${signalform_time_chart.auth_updateClient.id}",
+            "chart_id": "${signalform_time_chart.auth_resetAccessToken.id}",
             "width": 12,
             "height": 2,
             "row": 10
           },
           {
-            "chart_id": "${signalform_time_chart.auth_enableClient.id}",
+            "chart_id": "${signalform_time_chart.auth_updateClient.id}",
             "width": 12,
             "height": 2,
             "row": 12
           },
           {
-            "chart_id": "${signalform_time_chart.auth_disableClient.id}",
+            "chart_id": "${signalform_time_chart.auth_enableClient.id}",
             "width": 12,
             "height": 2,
             "row": 14
           },
           {
-            "chart_id": "${signalform_time_chart.auth_deleteClient.id}",
+            "chart_id": "${signalform_time_chart.auth_disableClient.id}",
             "width": 12,
             "height": 2,
             "row": 16
           },
           {
-            "chart_id": "${signalform_time_chart.auth_listRoles.id}",
+            "chart_id": "${signalform_time_chart.auth_deleteClient.id}",
             "width": 12,
             "height": 2,
             "row": 18
           },
           {
-            "chart_id": "${signalform_time_chart.auth_role.id}",
+            "chart_id": "${signalform_time_chart.auth_listRoles.id}",
             "width": 12,
             "height": 2,
             "row": 20
           },
           {
-            "chart_id": "${signalform_time_chart.auth_createRole.id}",
+            "chart_id": "${signalform_time_chart.auth_role.id}",
             "width": 12,
             "height": 2,
             "row": 22
           },
           {
-            "chart_id": "${signalform_time_chart.auth_updateRole.id}",
+            "chart_id": "${signalform_time_chart.auth_createRole.id}",
             "width": 12,
             "height": 2,
             "row": 24
           },
           {
-            "chart_id": "${signalform_time_chart.auth_deleteRole.id}",
+            "chart_id": "${signalform_time_chart.auth_updateRole.id}",
             "width": 12,
             "height": 2,
             "row": 26
           },
           {
-            "chart_id": "${signalform_time_chart.auth_expandScopesGet.id}",
+            "chart_id": "${signalform_time_chart.auth_deleteRole.id}",
             "width": 12,
             "height": 2,
             "row": 28
           },
           {
-            "chart_id": "${signalform_time_chart.auth_expandScopes.id}",
+            "chart_id": "${signalform_time_chart.auth_expandScopesGet.id}",
             "width": 12,
             "height": 2,
             "row": 30
           },
           {
-            "chart_id": "${signalform_time_chart.auth_currentScopes.id}",
+            "chart_id": "${signalform_time_chart.auth_expandScopes.id}",
             "width": 12,
             "height": 2,
             "row": 32
           },
           {
-            "chart_id": "${signalform_time_chart.auth_awsS3Credentials.id}",
+            "chart_id": "${signalform_time_chart.auth_currentScopes.id}",
             "width": 12,
             "height": 2,
             "row": 34
           },
           {
-            "chart_id": "${signalform_time_chart.auth_azureAccounts.id}",
+            "chart_id": "${signalform_time_chart.auth_awsS3Credentials.id}",
             "width": 12,
             "height": 2,
             "row": 36
           },
           {
-            "chart_id": "${signalform_time_chart.auth_azureTables.id}",
+            "chart_id": "${signalform_time_chart.auth_azureAccounts.id}",
             "width": 12,
             "height": 2,
             "row": 38
           },
           {
-            "chart_id": "${signalform_time_chart.auth_azureTableSAS.id}",
+            "chart_id": "${signalform_time_chart.auth_azureTables.id}",
             "width": 12,
             "height": 2,
             "row": 40
           },
           {
-            "chart_id": "${signalform_time_chart.auth_azureBlobSAS.id}",
+            "chart_id": "${signalform_time_chart.auth_azureTableSAS.id}",
             "width": 12,
             "height": 2,
             "row": 42
           },
           {
-            "chart_id": "${signalform_time_chart.auth_sentryDSN.id}",
+            "chart_id": "${signalform_time_chart.auth_azureBlobSAS.id}",
             "width": 12,
             "height": 2,
             "row": 44
           },
           {
-            "chart_id": "${signalform_time_chart.auth_statsumToken.id}",
+            "chart_id": "${signalform_time_chart.auth_sentryDSN.id}",
             "width": 12,
             "height": 2,
             "row": 46
           },
           {
-            "chart_id": "${signalform_time_chart.auth_webhooktunnelToken.id}",
+            "chart_id": "${signalform_time_chart.auth_statsumToken.id}",
             "width": 12,
             "height": 2,
             "row": 48
           },
           {
-            "chart_id": "${signalform_time_chart.auth_authenticateHawk.id}",
+            "chart_id": "${signalform_time_chart.auth_webhooktunnelToken.id}",
             "width": 12,
             "height": 2,
             "row": 50
           },
           {
-            "chart_id": "${signalform_time_chart.auth_testAuthenticate.id}",
+            "chart_id": "${signalform_time_chart.auth_authenticateHawk.id}",
             "width": 12,
             "height": 2,
             "row": 52
           },
           {
-            "chart_id": "${signalform_time_chart.auth_testAuthenticateGet.id}",
+            "chart_id": "${signalform_time_chart.auth_testAuthenticate.id}",
             "width": 12,
             "height": 2,
             "row": 54
           },
           {
-            "chart_id": "${signalform_time_chart.auth_ping.id}",
+            "chart_id": "${signalform_time_chart.auth_testAuthenticateGet.id}",
             "width": 12,
             "height": 2,
             "row": 56
+          },
+          {
+            "chart_id": "${signalform_time_chart.auth_ping.id}",
+            "width": 12,
+            "height": 2,
+            "row": 58
           }
         ]
       },
@@ -184,94 +190,100 @@
         "dashboard_group": "${signalform_dashboard_group.aws-provisioner_metrics.id}",
         "chart": [
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_listWorkerTypeSummaries.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_api_all.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 1
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_createWorkerType.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_listWorkerTypeSummaries.id}",
             "width": 12,
             "height": 2,
             "row": 4
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_updateWorkerType.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_createWorkerType.id}",
             "width": 12,
             "height": 2,
             "row": 6
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_workerTypeLastModified.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_updateWorkerType.id}",
             "width": 12,
             "height": 2,
             "row": 8
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_workerType.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_workerTypeLastModified.id}",
             "width": 12,
             "height": 2,
             "row": 10
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_removeWorkerType.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_workerType.id}",
             "width": 12,
             "height": 2,
             "row": 12
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_listWorkerTypes.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_removeWorkerType.id}",
             "width": 12,
             "height": 2,
             "row": 14
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_createSecret.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_listWorkerTypes.id}",
             "width": 12,
             "height": 2,
             "row": 16
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_getSecret.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_createSecret.id}",
             "width": 12,
             "height": 2,
             "row": 18
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_instanceStarted.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_getSecret.id}",
             "width": 12,
             "height": 2,
             "row": 20
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_removeSecret.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_instanceStarted.id}",
             "width": 12,
             "height": 2,
             "row": 22
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_getLaunchSpecs.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_removeSecret.id}",
             "width": 12,
             "height": 2,
             "row": 24
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_state.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_getLaunchSpecs.id}",
             "width": 12,
             "height": 2,
             "row": 26
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_backendStatus.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_state.id}",
             "width": 12,
             "height": 2,
             "row": 28
           },
           {
-            "chart_id": "${signalform_time_chart.aws-provisioner_ping.id}",
+            "chart_id": "${signalform_time_chart.aws-provisioner_backendStatus.id}",
             "width": 12,
             "height": 2,
             "row": 30
+          },
+          {
+            "chart_id": "${signalform_time_chart.aws-provisioner_ping.id}",
+            "width": 12,
+            "height": 2,
+            "row": 32
           }
         ]
       },
@@ -282,52 +294,58 @@
         "dashboard_group": "${signalform_dashboard_group.github_metrics.id}",
         "chart": [
           {
-            "chart_id": "${signalform_time_chart.github_githubWebHookConsumer.id}",
+            "chart_id": "${signalform_time_chart.github_api_all.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 1
           },
           {
-            "chart_id": "${signalform_time_chart.github_builds.id}",
+            "chart_id": "${signalform_time_chart.github_githubWebHookConsumer.id}",
             "width": 12,
             "height": 2,
             "row": 4
           },
           {
-            "chart_id": "${signalform_time_chart.github_badge.id}",
+            "chart_id": "${signalform_time_chart.github_builds.id}",
             "width": 12,
             "height": 2,
             "row": 6
           },
           {
-            "chart_id": "${signalform_time_chart.github_repository.id}",
+            "chart_id": "${signalform_time_chart.github_badge.id}",
             "width": 12,
             "height": 2,
             "row": 8
           },
           {
-            "chart_id": "${signalform_time_chart.github_latest.id}",
+            "chart_id": "${signalform_time_chart.github_repository.id}",
             "width": 12,
             "height": 2,
             "row": 10
           },
           {
-            "chart_id": "${signalform_time_chart.github_createStatus.id}",
+            "chart_id": "${signalform_time_chart.github_latest.id}",
             "width": 12,
             "height": 2,
             "row": 12
           },
           {
-            "chart_id": "${signalform_time_chart.github_createComment.id}",
+            "chart_id": "${signalform_time_chart.github_createStatus.id}",
             "width": 12,
             "height": 2,
             "row": 14
           },
           {
-            "chart_id": "${signalform_time_chart.github_ping.id}",
+            "chart_id": "${signalform_time_chart.github_createComment.id}",
             "width": 12,
             "height": 2,
             "row": 16
+          },
+          {
+            "chart_id": "${signalform_time_chart.github_ping.id}",
+            "width": 12,
+            "height": 2,
+            "row": 18
           }
         ]
       },
@@ -338,82 +356,88 @@
         "dashboard_group": "${signalform_dashboard_group.hooks_metrics.id}",
         "chart": [
           {
-            "chart_id": "${signalform_time_chart.hooks_listHookGroups.id}",
+            "chart_id": "${signalform_time_chart.hooks_api_all.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 1
           },
           {
-            "chart_id": "${signalform_time_chart.hooks_listHooks.id}",
+            "chart_id": "${signalform_time_chart.hooks_listHookGroups.id}",
             "width": 12,
             "height": 2,
             "row": 4
           },
           {
-            "chart_id": "${signalform_time_chart.hooks_hook.id}",
+            "chart_id": "${signalform_time_chart.hooks_listHooks.id}",
             "width": 12,
             "height": 2,
             "row": 6
           },
           {
-            "chart_id": "${signalform_time_chart.hooks_getHookStatus.id}",
+            "chart_id": "${signalform_time_chart.hooks_hook.id}",
             "width": 12,
             "height": 2,
             "row": 8
           },
           {
-            "chart_id": "${signalform_time_chart.hooks_getHookSchedule.id}",
+            "chart_id": "${signalform_time_chart.hooks_getHookStatus.id}",
             "width": 12,
             "height": 2,
             "row": 10
           },
           {
-            "chart_id": "${signalform_time_chart.hooks_createHook.id}",
+            "chart_id": "${signalform_time_chart.hooks_getHookSchedule.id}",
             "width": 12,
             "height": 2,
             "row": 12
           },
           {
-            "chart_id": "${signalform_time_chart.hooks_updateHook.id}",
+            "chart_id": "${signalform_time_chart.hooks_createHook.id}",
             "width": 12,
             "height": 2,
             "row": 14
           },
           {
-            "chart_id": "${signalform_time_chart.hooks_removeHook.id}",
+            "chart_id": "${signalform_time_chart.hooks_updateHook.id}",
             "width": 12,
             "height": 2,
             "row": 16
           },
           {
-            "chart_id": "${signalform_time_chart.hooks_triggerHook.id}",
+            "chart_id": "${signalform_time_chart.hooks_removeHook.id}",
             "width": 12,
             "height": 2,
             "row": 18
           },
           {
-            "chart_id": "${signalform_time_chart.hooks_getTriggerToken.id}",
+            "chart_id": "${signalform_time_chart.hooks_triggerHook.id}",
             "width": 12,
             "height": 2,
             "row": 20
           },
           {
-            "chart_id": "${signalform_time_chart.hooks_resetTriggerToken.id}",
+            "chart_id": "${signalform_time_chart.hooks_getTriggerToken.id}",
             "width": 12,
             "height": 2,
             "row": 22
           },
           {
-            "chart_id": "${signalform_time_chart.hooks_triggerHookWithToken.id}",
+            "chart_id": "${signalform_time_chart.hooks_resetTriggerToken.id}",
             "width": 12,
             "height": 2,
             "row": 24
           },
           {
-            "chart_id": "${signalform_time_chart.hooks_ping.id}",
+            "chart_id": "${signalform_time_chart.hooks_triggerHookWithToken.id}",
             "width": 12,
             "height": 2,
             "row": 26
+          },
+          {
+            "chart_id": "${signalform_time_chart.hooks_ping.id}",
+            "width": 12,
+            "height": 2,
+            "row": 28
           }
         ]
       },
@@ -424,40 +448,46 @@
         "dashboard_group": "${signalform_dashboard_group.index_metrics.id}",
         "chart": [
           {
-            "chart_id": "${signalform_time_chart.index_findTask.id}",
+            "chart_id": "${signalform_time_chart.index_api_all.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 1
           },
           {
-            "chart_id": "${signalform_time_chart.index_listNamespaces.id}",
+            "chart_id": "${signalform_time_chart.index_findTask.id}",
             "width": 12,
             "height": 2,
             "row": 4
           },
           {
-            "chart_id": "${signalform_time_chart.index_listTasks.id}",
+            "chart_id": "${signalform_time_chart.index_listNamespaces.id}",
             "width": 12,
             "height": 2,
             "row": 6
           },
           {
-            "chart_id": "${signalform_time_chart.index_insertTask.id}",
+            "chart_id": "${signalform_time_chart.index_listTasks.id}",
             "width": 12,
             "height": 2,
             "row": 8
           },
           {
-            "chart_id": "${signalform_time_chart.index_findArtifactFromTask.id}",
+            "chart_id": "${signalform_time_chart.index_insertTask.id}",
             "width": 12,
             "height": 2,
             "row": 10
           },
           {
-            "chart_id": "${signalform_time_chart.index_ping.id}",
+            "chart_id": "${signalform_time_chart.index_findArtifactFromTask.id}",
             "width": 12,
             "height": 2,
             "row": 12
+          },
+          {
+            "chart_id": "${signalform_time_chart.index_ping.id}",
+            "width": 12,
+            "height": 2,
+            "row": 14
           }
         ]
       },
@@ -468,16 +498,22 @@
         "dashboard_group": "${signalform_dashboard_group.login_metrics.id}",
         "chart": [
           {
+            "chart_id": "${signalform_time_chart.login_api_all.id}",
+            "width": 12,
+            "height": 2,
+            "row": 1
+          },
+          {
             "chart_id": "${signalform_time_chart.login_oidcCredentials.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 4
           },
           {
             "chart_id": "${signalform_time_chart.login_ping.id}",
             "width": 12,
             "height": 2,
-            "row": 4
+            "row": 6
           }
         ]
       },
@@ -488,28 +524,34 @@
         "dashboard_group": "${signalform_dashboard_group.notify_metrics.id}",
         "chart": [
           {
-            "chart_id": "${signalform_time_chart.notify_email.id}",
+            "chart_id": "${signalform_time_chart.notify_api_all.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 1
           },
           {
-            "chart_id": "${signalform_time_chart.notify_pulse.id}",
+            "chart_id": "${signalform_time_chart.notify_email.id}",
             "width": 12,
             "height": 2,
             "row": 4
           },
           {
-            "chart_id": "${signalform_time_chart.notify_irc.id}",
+            "chart_id": "${signalform_time_chart.notify_pulse.id}",
             "width": 12,
             "height": 2,
             "row": 6
           },
           {
-            "chart_id": "${signalform_time_chart.notify_ping.id}",
+            "chart_id": "${signalform_time_chart.notify_irc.id}",
             "width": 12,
             "height": 2,
             "row": 8
+          },
+          {
+            "chart_id": "${signalform_time_chart.notify_ping.id}",
+            "width": 12,
+            "height": 2,
+            "row": 10
           }
         ]
       },
@@ -520,28 +562,34 @@
         "dashboard_group": "${signalform_dashboard_group.purge-cache_metrics.id}",
         "chart": [
           {
-            "chart_id": "${signalform_time_chart.purge-cache_purgeCache.id}",
+            "chart_id": "${signalform_time_chart.purge-cache_api_all.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 1
           },
           {
-            "chart_id": "${signalform_time_chart.purge-cache_allPurgeRequests.id}",
+            "chart_id": "${signalform_time_chart.purge-cache_purgeCache.id}",
             "width": 12,
             "height": 2,
             "row": 4
           },
           {
-            "chart_id": "${signalform_time_chart.purge-cache_purgeRequests.id}",
+            "chart_id": "${signalform_time_chart.purge-cache_allPurgeRequests.id}",
             "width": 12,
             "height": 2,
             "row": 6
           },
           {
-            "chart_id": "${signalform_time_chart.purge-cache_ping.id}",
+            "chart_id": "${signalform_time_chart.purge-cache_purgeRequests.id}",
             "width": 12,
             "height": 2,
             "row": 8
+          },
+          {
+            "chart_id": "${signalform_time_chart.purge-cache_ping.id}",
+            "width": 12,
+            "height": 2,
+            "row": 10
           }
         ]
       },
@@ -552,208 +600,214 @@
         "dashboard_group": "${signalform_dashboard_group.queue_metrics.id}",
         "chart": [
           {
-            "chart_id": "${signalform_time_chart.queue_task.id}",
+            "chart_id": "${signalform_time_chart.queue_api_all.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 1
           },
           {
-            "chart_id": "${signalform_time_chart.queue_status.id}",
+            "chart_id": "${signalform_time_chart.queue_task.id}",
             "width": 12,
             "height": 2,
             "row": 4
           },
           {
-            "chart_id": "${signalform_time_chart.queue_listTaskGroup.id}",
+            "chart_id": "${signalform_time_chart.queue_status.id}",
             "width": 12,
             "height": 2,
             "row": 6
           },
           {
-            "chart_id": "${signalform_time_chart.queue_listDependentTasks.id}",
+            "chart_id": "${signalform_time_chart.queue_listTaskGroup.id}",
             "width": 12,
             "height": 2,
             "row": 8
           },
           {
-            "chart_id": "${signalform_time_chart.queue_createTask.id}",
+            "chart_id": "${signalform_time_chart.queue_listDependentTasks.id}",
             "width": 12,
             "height": 2,
             "row": 10
           },
           {
-            "chart_id": "${signalform_time_chart.queue_defineTask.id}",
+            "chart_id": "${signalform_time_chart.queue_createTask.id}",
             "width": 12,
             "height": 2,
             "row": 12
           },
           {
-            "chart_id": "${signalform_time_chart.queue_scheduleTask.id}",
+            "chart_id": "${signalform_time_chart.queue_defineTask.id}",
             "width": 12,
             "height": 2,
             "row": 14
           },
           {
-            "chart_id": "${signalform_time_chart.queue_rerunTask.id}",
+            "chart_id": "${signalform_time_chart.queue_scheduleTask.id}",
             "width": 12,
             "height": 2,
             "row": 16
           },
           {
-            "chart_id": "${signalform_time_chart.queue_cancelTask.id}",
+            "chart_id": "${signalform_time_chart.queue_rerunTask.id}",
             "width": 12,
             "height": 2,
             "row": 18
           },
           {
-            "chart_id": "${signalform_time_chart.queue_pollTaskUrls.id}",
+            "chart_id": "${signalform_time_chart.queue_cancelTask.id}",
             "width": 12,
             "height": 2,
             "row": 20
           },
           {
-            "chart_id": "${signalform_time_chart.queue_claimWork.id}",
+            "chart_id": "${signalform_time_chart.queue_pollTaskUrls.id}",
             "width": 12,
             "height": 2,
             "row": 22
           },
           {
-            "chart_id": "${signalform_time_chart.queue_claimTask.id}",
+            "chart_id": "${signalform_time_chart.queue_claimWork.id}",
             "width": 12,
             "height": 2,
             "row": 24
           },
           {
-            "chart_id": "${signalform_time_chart.queue_reclaimTask.id}",
+            "chart_id": "${signalform_time_chart.queue_claimTask.id}",
             "width": 12,
             "height": 2,
             "row": 26
           },
           {
-            "chart_id": "${signalform_time_chart.queue_reportCompleted.id}",
+            "chart_id": "${signalform_time_chart.queue_reclaimTask.id}",
             "width": 12,
             "height": 2,
             "row": 28
           },
           {
-            "chart_id": "${signalform_time_chart.queue_reportFailed.id}",
+            "chart_id": "${signalform_time_chart.queue_reportCompleted.id}",
             "width": 12,
             "height": 2,
             "row": 30
           },
           {
-            "chart_id": "${signalform_time_chart.queue_reportException.id}",
+            "chart_id": "${signalform_time_chart.queue_reportFailed.id}",
             "width": 12,
             "height": 2,
             "row": 32
           },
           {
-            "chart_id": "${signalform_time_chart.queue_createArtifact.id}",
+            "chart_id": "${signalform_time_chart.queue_reportException.id}",
             "width": 12,
             "height": 2,
             "row": 34
           },
           {
-            "chart_id": "${signalform_time_chart.queue_completeArtifact.id}",
+            "chart_id": "${signalform_time_chart.queue_createArtifact.id}",
             "width": 12,
             "height": 2,
             "row": 36
           },
           {
-            "chart_id": "${signalform_time_chart.queue_getArtifact.id}",
+            "chart_id": "${signalform_time_chart.queue_completeArtifact.id}",
             "width": 12,
             "height": 2,
             "row": 38
           },
           {
-            "chart_id": "${signalform_time_chart.queue_getLatestArtifact.id}",
+            "chart_id": "${signalform_time_chart.queue_getArtifact.id}",
             "width": 12,
             "height": 2,
             "row": 40
           },
           {
-            "chart_id": "${signalform_time_chart.queue_listArtifacts.id}",
+            "chart_id": "${signalform_time_chart.queue_getLatestArtifact.id}",
             "width": 12,
             "height": 2,
             "row": 42
           },
           {
-            "chart_id": "${signalform_time_chart.queue_listLatestArtifacts.id}",
+            "chart_id": "${signalform_time_chart.queue_listArtifacts.id}",
             "width": 12,
             "height": 2,
             "row": 44
           },
           {
-            "chart_id": "${signalform_time_chart.queue_listProvisioners.id}",
+            "chart_id": "${signalform_time_chart.queue_listLatestArtifacts.id}",
             "width": 12,
             "height": 2,
             "row": 46
           },
           {
-            "chart_id": "${signalform_time_chart.queue_getProvisioner.id}",
+            "chart_id": "${signalform_time_chart.queue_listProvisioners.id}",
             "width": 12,
             "height": 2,
             "row": 48
           },
           {
-            "chart_id": "${signalform_time_chart.queue_declareProvisioner.id}",
+            "chart_id": "${signalform_time_chart.queue_getProvisioner.id}",
             "width": 12,
             "height": 2,
             "row": 50
           },
           {
-            "chart_id": "${signalform_time_chart.queue_pendingTasks.id}",
+            "chart_id": "${signalform_time_chart.queue_declareProvisioner.id}",
             "width": 12,
             "height": 2,
             "row": 52
           },
           {
-            "chart_id": "${signalform_time_chart.queue_listWorkerTypes.id}",
+            "chart_id": "${signalform_time_chart.queue_pendingTasks.id}",
             "width": 12,
             "height": 2,
             "row": 54
           },
           {
-            "chart_id": "${signalform_time_chart.queue_getWorkerType.id}",
+            "chart_id": "${signalform_time_chart.queue_listWorkerTypes.id}",
             "width": 12,
             "height": 2,
             "row": 56
           },
           {
-            "chart_id": "${signalform_time_chart.queue_declareWorkerType.id}",
+            "chart_id": "${signalform_time_chart.queue_getWorkerType.id}",
             "width": 12,
             "height": 2,
             "row": 58
           },
           {
-            "chart_id": "${signalform_time_chart.queue_listWorkers.id}",
+            "chart_id": "${signalform_time_chart.queue_declareWorkerType.id}",
             "width": 12,
             "height": 2,
             "row": 60
           },
           {
-            "chart_id": "${signalform_time_chart.queue_getWorker.id}",
+            "chart_id": "${signalform_time_chart.queue_listWorkers.id}",
             "width": 12,
             "height": 2,
             "row": 62
           },
           {
-            "chart_id": "${signalform_time_chart.queue_quarantineWorker.id}",
+            "chart_id": "${signalform_time_chart.queue_getWorker.id}",
             "width": 12,
             "height": 2,
             "row": 64
           },
           {
-            "chart_id": "${signalform_time_chart.queue_declareWorker.id}",
+            "chart_id": "${signalform_time_chart.queue_quarantineWorker.id}",
             "width": 12,
             "height": 2,
             "row": 66
           },
           {
-            "chart_id": "${signalform_time_chart.queue_ping.id}",
+            "chart_id": "${signalform_time_chart.queue_declareWorker.id}",
             "width": 12,
             "height": 2,
             "row": 68
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_ping.id}",
+            "width": 12,
+            "height": 2,
+            "row": 70
           }
         ]
       },
@@ -764,34 +818,40 @@
         "dashboard_group": "${signalform_dashboard_group.secrets_metrics.id}",
         "chart": [
           {
-            "chart_id": "${signalform_time_chart.secrets_set.id}",
+            "chart_id": "${signalform_time_chart.secrets_api_all.id}",
             "width": 12,
             "height": 2,
-            "row": 2
+            "row": 1
           },
           {
-            "chart_id": "${signalform_time_chart.secrets_remove.id}",
+            "chart_id": "${signalform_time_chart.secrets_set.id}",
             "width": 12,
             "height": 2,
             "row": 4
           },
           {
-            "chart_id": "${signalform_time_chart.secrets_get.id}",
+            "chart_id": "${signalform_time_chart.secrets_remove.id}",
             "width": 12,
             "height": 2,
             "row": 6
           },
           {
-            "chart_id": "${signalform_time_chart.secrets_list.id}",
+            "chart_id": "${signalform_time_chart.secrets_get.id}",
             "width": 12,
             "height": 2,
             "row": 8
           },
           {
-            "chart_id": "${signalform_time_chart.secrets_ping.id}",
+            "chart_id": "${signalform_time_chart.secrets_list.id}",
             "width": 12,
             "height": 2,
             "row": 10
+          },
+          {
+            "chart_id": "${signalform_time_chart.secrets_ping.id}",
+            "width": 12,
+            "height": 2,
+            "row": 12
           }
         ]
       },
@@ -800,10 +860,83 @@
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.tc-treeherder_metrics.id}",
-        "chart": []
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.tc-treeherder_api_all.id}",
+            "width": 12,
+            "height": 2,
+            "row": 1
+          }
+        ]
       }
     },
     "signalform_time_chart": {
+      "auth_api_all": {
+        "name": "auth ALL (duration / count)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-auth.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-auth.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-auth.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-auth.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-auth.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-auth.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-auth.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-auth.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-auth.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-auth.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "count"
+          },
+          {
+            "axis": "right",
+            "color": "emerald",
+            "label": "client-errors"
+          },
+          {
+            "axis": "right",
+            "color": "brown",
+            "label": "server-errors"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "requests"
+        }
+      },
       "auth_listClients": {
         "name": "auth.listClients() duration / count",
         "plot_type": "LineChart",
@@ -2652,6 +2785,72 @@
           "label": "requests"
         }
       },
+      "aws-provisioner_api_all": {
+        "name": "aws-provisioner ALL (duration / count)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"aws-provisioner.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"aws-provisioner.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"aws-provisioner.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"aws-provisioner.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"aws-provisioner.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"aws-provisioner.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"aws-provisioner.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"aws-provisioner.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"aws-provisioner.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"aws-provisioner.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "count"
+          },
+          {
+            "axis": "right",
+            "color": "emerald",
+            "label": "client-errors"
+          },
+          {
+            "axis": "right",
+            "color": "brown",
+            "label": "server-errors"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "requests"
+        }
+      },
       "aws-provisioner_listWorkerTypeSummaries": {
         "name": "aws-provisioner.listWorkerTypeSummaries() duration / count",
         "plot_type": "LineChart",
@@ -3642,6 +3841,72 @@
           "label": "requests"
         }
       },
+      "github_api_all": {
+        "name": "github ALL (duration / count)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-github.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-github.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-github.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-github.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-github.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-github.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-github.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-github.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-github.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-github.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "count"
+          },
+          {
+            "axis": "right",
+            "color": "emerald",
+            "label": "client-errors"
+          },
+          {
+            "axis": "right",
+            "color": "brown",
+            "label": "server-errors"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "requests"
+        }
+      },
       "github_githubWebHookConsumer": {
         "name": "github.githubWebHookConsumer() duration / count",
         "plot_type": "LineChart",
@@ -4108,6 +4373,72 @@
         "name": "github.ping() duration / count",
         "plot_type": "LineChart",
         "program_text": "data(\"taskcluster-github.api.ping.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-github.api.ping.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-github.api.ping.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-github.api.ping.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-github.api.ping.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-github.api.ping.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-github.api.ping.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-github.api.ping.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-github.api.ping.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-github.api.ping.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "count"
+          },
+          {
+            "axis": "right",
+            "color": "emerald",
+            "label": "client-errors"
+          },
+          {
+            "axis": "right",
+            "color": "brown",
+            "label": "server-errors"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "requests"
+        }
+      },
+      "hooks_api_all": {
+        "name": "hooks ALL (duration / count)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-hooks.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-hooks.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-hooks.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-hooks.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-hooks.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-hooks.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-hooks.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-hooks.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-hooks.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-hooks.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
@@ -5028,6 +5359,72 @@
           "label": "requests"
         }
       },
+      "index_api_all": {
+        "name": "index ALL (duration / count)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-index.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-index.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-index.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-index.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-index.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-index.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-index.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-index.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-index.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-index.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "count"
+          },
+          {
+            "axis": "right",
+            "color": "emerald",
+            "label": "client-errors"
+          },
+          {
+            "axis": "right",
+            "color": "brown",
+            "label": "server-errors"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "requests"
+        }
+      },
       "index_findTask": {
         "name": "index.findTask() duration / count",
         "plot_type": "LineChart",
@@ -5424,6 +5821,72 @@
           "label": "requests"
         }
       },
+      "login_api_all": {
+        "name": "login ALL (duration / count)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-login.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-login.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-login.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-login.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-login.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-login.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-login.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-login.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-login.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-login.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "count"
+          },
+          {
+            "axis": "right",
+            "color": "emerald",
+            "label": "client-errors"
+          },
+          {
+            "axis": "right",
+            "color": "brown",
+            "label": "server-errors"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "requests"
+        }
+      },
       "login_oidcCredentials": {
         "name": "login.oidcCredentials() duration / count",
         "plot_type": "LineChart",
@@ -5494,6 +5957,72 @@
         "name": "login.ping() duration / count",
         "plot_type": "LineChart",
         "program_text": "data(\"taskcluster-login.api.ping.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-login.api.ping.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-login.api.ping.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-login.api.ping.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-login.api.ping.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-login.api.ping.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-login.api.ping.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-login.api.ping.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-login.api.ping.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-login.api.ping.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "count"
+          },
+          {
+            "axis": "right",
+            "color": "emerald",
+            "label": "client-errors"
+          },
+          {
+            "axis": "right",
+            "color": "brown",
+            "label": "server-errors"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "requests"
+        }
+      },
+      "notify_api_all": {
+        "name": "notify ALL (duration / count)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-notify.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-notify.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-notify.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-notify.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-notify.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-notify.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-notify.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-notify.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-notify.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-notify.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
@@ -5820,6 +6349,72 @@
           "label": "requests"
         }
       },
+      "purge-cache_api_all": {
+        "name": "purge-cache ALL (duration / count)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"purge-cache.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"purge-cache.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"purge-cache.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"purge-cache.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"purge-cache.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"purge-cache.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"purge-cache.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"purge-cache.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"purge-cache.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"purge-cache.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "count"
+          },
+          {
+            "axis": "right",
+            "color": "emerald",
+            "label": "client-errors"
+          },
+          {
+            "axis": "right",
+            "color": "brown",
+            "label": "server-errors"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "requests"
+        }
+      },
       "purge-cache_purgeCache": {
         "name": "purge-cache.purgeCache() duration / count",
         "plot_type": "LineChart",
@@ -6022,6 +6617,72 @@
         "name": "purge-cache.ping() duration / count",
         "plot_type": "LineChart",
         "program_text": "data(\"purge-cache.api.ping.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"purge-cache.api.ping.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"purge-cache.api.ping.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"purge-cache.api.ping.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"purge-cache.api.ping.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"purge-cache.api.ping.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"purge-cache.api.ping.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"purge-cache.api.ping.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"purge-cache.api.ping.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"purge-cache.api.ping.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "count"
+          },
+          {
+            "axis": "right",
+            "color": "emerald",
+            "label": "client-errors"
+          },
+          {
+            "axis": "right",
+            "color": "brown",
+            "label": "server-errors"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "requests"
+        }
+      },
+      "queue_api_all": {
+        "name": "queue ALL (duration / count)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-queue.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-queue.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-queue.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-queue.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-queue.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-queue.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-queue.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-queue.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-queue.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
@@ -8328,6 +8989,72 @@
           "label": "requests"
         }
       },
+      "secrets_api_all": {
+        "name": "secrets ALL (duration / count)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-secrets.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-secrets.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-secrets.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-secrets.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-secrets.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-secrets.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-secrets.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-secrets.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-secrets.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-secrets.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "count"
+          },
+          {
+            "axis": "right",
+            "color": "emerald",
+            "label": "client-errors"
+          },
+          {
+            "axis": "right",
+            "color": "brown",
+            "label": "server-errors"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "requests"
+        }
+      },
       "secrets_set": {
         "name": "secrets.set() duration / count",
         "plot_type": "LineChart",
@@ -8596,6 +9323,72 @@
         "name": "secrets.ping() duration / count",
         "plot_type": "LineChart",
         "program_text": "data(\"taskcluster-secrets.api.ping.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-secrets.api.ping.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-secrets.api.ping.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-secrets.api.ping.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-secrets.api.ping.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-secrets.api.ping.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-secrets.api.ping.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-secrets.api.ping.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-secrets.api.ping.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-secrets.api.ping.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "count"
+          },
+          {
+            "axis": "right",
+            "color": "emerald",
+            "label": "client-errors"
+          },
+          {
+            "axis": "right",
+            "color": "brown",
+            "label": "server-errors"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "requests"
+        }
+      },
+      "tc-treeherder_api_all": {
+        "name": "tc-treeherder ALL (duration / count)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"tc-treeherder.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"tc-treeherder.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"tc-treeherder.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"tc-treeherder.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"tc-treeherder.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"tc-treeherder.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"tc-treeherder.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"tc-treeherder.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"tc-treeherder.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"tc-treeherder.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [

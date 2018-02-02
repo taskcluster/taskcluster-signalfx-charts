@@ -6,53 +6,110 @@ projects:
     apiPrefix: api
     publisherPrefix: publisher
     references: [Auth, AuthEvents]
+    processPrefix: process
+    procs:
+      - server
+      - expire-sentry
+      - purge-expired-clients
   - name: aws-provisioner
     prefix: aws-provisioner
     apiPrefix: api
     publisherPrefix: publisher
     references: [AwsProvisioner, AwsProvisionerEvents]
+    processPrefix: process
+    procs:
+      - server
+      - provisioner
   - name: github
     prefix: taskcluster-github
     apiPrefix: api
     publisherPrefix: publisher
     references: [Github, GithubEvents]
+    processPrefix: process
+    procs:
+      - server
+      - worker
+      - syncInstallations
   - name: hooks
     prefix: taskcluster-hooks
     apiPrefix: api
     publisherPrefix: publisher
     references: [Hooks]
+    processPrefix: process
+    procs:
+      - server
+      - scheduler
   - name: index
     prefix: taskcluster-index
     apiPrefix: api
     publisherPrefix: publisher
     references: [Index]
+    processPrefix: process
+    procs:
+      - server
+      - handlers
+      - expire
   - name: login
     prefix: taskcluster-login
     apiPrefix: api
     publisherPrefix: publisher
     references: [Login]
+    processPrefix: process
+    procs:
+      - server
+      - scanner
   - name: notify
     prefix: taskcluster-notify
     apiPrefix: api
     publisherPrefix: publisher
     references: [Notify]
+    processPrefix: process
+    procs:
+      - server
+      - irc
+      - handler
   - name: purge-cache
     prefix: purge-cache
     apiPrefix: api
     publisherPrefix: publisher
     references: [PurgeCache, PurgeCacheEvents]
+    processPrefix: process
+    procs:
+      - server
+      - expire-cache-purges
   - name: queue
     prefix: taskcluster-queue
     apiPrefix: api
     publisherPrefix: publisher
     references: [Queue, QueueEvents]
+    processPrefix: process
+    procs:
+      - server
+      - claim-reaper
+      - deadline-reaper
+      - dependency-resolver
+      - expire-artifacts
+      - expire-tasks
+      - expire-task-groups
+      - expire-task-group-members
+      - expire-task-group-sizes
+      - expire-task-dependency
+      - expire-task-requirement
+      - expire-queues
+      - expire-worker-info
   - name: secrets
     prefix: taskcluster-secrets
     apiPrefix: api
     publisherPrefix: publisher
     references: [Secrets]
+    processPrefix: process
+    procs:
+      - server
   - name: tc-treeherder
     prefix: tc-treeherder
     apiPrefix: api
     publisherPrefix: publisher
     references: [TreeherderEvents]
+    processPrefix: process
+    procs:
+      - server

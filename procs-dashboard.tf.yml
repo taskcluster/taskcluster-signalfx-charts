@@ -1,0 +1,93 @@
+resource:
+  signalform_dashboard:
+    $merge:
+      $map: {$eval: projects}
+      each(project):
+        '${project.name}_procs':
+          name: '${project.name} Procs'
+          time_range: '-1d'
+          charts_resolution: 'highest'
+          dashboard_group: '$${signalform_dashboard_group.${project.name}_metrics.id}'
+          chart:
+            $map: {$eval: 'range(len(project.procs))'}
+            each(i):
+              chart_id: '$${signalform_time_chart.${project.name}_proc_${project.procs[i]}.id}'
+              width: 12
+              height: 2
+              row: {$eval: '(1 + i) * 2'}
+  signalform_time_chart:
+    $merge:
+      $flattenDeep:
+        $map: {$eval: projects}
+        each(project):
+          $map: {$eval: 'project.procs'}
+          each(proc):
+            '${project.name}_proc_${proc}':
+              name: "${project.name} > ${proc} (CPU / memory)"
+              plot_type: LineChart
+              program_text: |
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.max", rollup="max").publish(label="cpu_max")
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p99", rollup="max").publish(label="cpu_p99")
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p95", rollup="max").publish(label="cpu_p95")
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p75", rollup="max").publish(label="cpu_p75")
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p50", rollup="max").publish(label="cpu_p50")
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p25", rollup="max").publish(label="cpu_p25")
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.min", rollup="min").publish(label="cpu_min")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.max", rollup="max").publish(label="memory_max")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p99", rollup="max").publish(label="memory_p99")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p95", rollup="max").publish(label="memory_p95")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p75", rollup="max").publish(label="memory_p75")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p50", rollup="max").publish(label="memory_p50")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p25", rollup="max").publish(label="memory_p25")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.min", rollup="min").publish(label="memory_min")
+              show_data_markers: true
+              time_range: "-1d"
+              viz_options:
+              - axis: left
+                color: brown
+                label: cpu_max
+                plot_type: AreaChart
+              - axis: left
+                color: orange
+                label: cpu_p99
+              - axis: left
+                color: yellow
+                label: cpu_p95
+              - axis: left
+                color: green
+                label: cpu_p75
+              - axis: left
+                color: green
+                label: cpu_p50
+              - axis: left
+                color: green
+                label: cpu_p25
+              - axis: left
+                color: green
+                label: cpu_min
+              - axis: right
+                color: blue
+                label: memory_max
+                plot_type: AreaChart
+              - axis: right
+                color: blue
+                label: memory_p99
+              - axis: right
+                color: violet
+                label: memory_p95
+              - axis: right
+                color: azure
+                label: memory_p75
+              - axis: right
+                color: azure
+                label: memory_p50
+              - axis: right
+                color: azure
+                label: memory_p25
+              - axis: right
+                color: azure
+                label: memory_min
+              axis_left:
+                label: CPU %
+              axis_right:
+                label: Memory

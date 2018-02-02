@@ -9,18 +9,75 @@ resource:
           charts_resolution: 'highest'
           dashboard_group: '$${signalform_dashboard_group.${project.name}_metrics.id}'
           chart:
-            $map: {$eval: 'range(len(project.methods))'}
-            each(i):
-              chart_id: '$${signalform_time_chart.${project.name}_${project.methods[i]}.id}'
+            $flattenDeep:
+            - chart_id: '$${signalform_time_chart.${project.name}_api_all.id}'
               width: 12
               height: 2
-              row: {$eval: '(1 + i) * 2'}
+              row: 1
+            - $map: {$eval: 'range(len(project.methods))'}
+              each(i):
+                chart_id: '$${signalform_time_chart.${project.name}_${project.methods[i]}.id}'
+                width: 12
+                height: 2
+                row: {$eval: '2 + (1 + i) * 2'}
   signalform_time_chart:
     $merge:
       $flattenDeep:
         $map: {$eval: projects}
         each(project):
-          $map: {$eval: 'project.methods'}
+        - '${project.name}_api_all':
+            name: "${project.name} ALL (duration / count)"
+            plot_type: LineChart
+            program_text: |
+              data("${project.prefix}.${project.apiPrefix}.all.5m.count", rollup="sum", extrapolation="zero").publish(label="count")
+              data("${project.prefix}.${project.apiPrefix}.all.client-error.5m.count", rollup="sum", extrapolation="zero").publish(label="client-errors")
+              data("${project.prefix}.${project.apiPrefix}.all.server-error.5m.count", rollup="sum", extrapolation="zero").publish(label="server-errors")
+              data("${project.prefix}.${project.apiPrefix}.all.5m.max", rollup="max").publish(label="max")
+              data("${project.prefix}.${project.apiPrefix}.all.5m.p99", rollup="max").publish(label="p99")
+              data("${project.prefix}.${project.apiPrefix}.all.5m.p95", rollup="max").publish(label="p95")
+              data("${project.prefix}.${project.apiPrefix}.all.5m.p75", rollup="max").publish(label="p75")
+              data("${project.prefix}.${project.apiPrefix}.all.5m.p50", rollup="max").publish(label="p50")
+              data("${project.prefix}.${project.apiPrefix}.all.5m.p25", rollup="max").publish(label="p25")
+              data("${project.prefix}.${project.apiPrefix}.all.5m.min", rollup="min").publish(label="min")
+            show_data_markers: true
+            time_range: "-1d"
+            viz_options:
+            - axis: right
+              color: pink
+              label: count
+            - axis: right
+              color: emerald
+              label: client-errors
+            - axis: right
+              color: brown
+              label: server-errors
+            - axis: left
+              color: brown
+              label: max
+              plot_type: AreaChart
+            - axis: left
+              color: orange
+              label: p99
+            - axis: left
+              color: yellow
+              label: p95
+            - axis: left
+              color: green
+              label: p75
+            - axis: left
+              color: green
+              label: p50
+            - axis: left
+              color: green
+              label: p25
+            - axis: left
+              color: green
+              label: min
+            axis_left:
+              label: duration (ms)
+            axis_right:
+              label: requests
+        - $map: {$eval: 'project.methods'}
           each(method):
             '${project.name}_${method}':
               name: "${project.name}.${method}() duration / count"

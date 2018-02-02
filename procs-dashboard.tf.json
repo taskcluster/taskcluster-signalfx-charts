@@ -1,0 +1,3351 @@
+{
+  "resource": {
+    "signalform_dashboard": {
+      "auth_procs": {
+        "name": "auth Procs",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.auth_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.auth_proc_server.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          },
+          {
+            "chart_id": "${signalform_time_chart.auth_proc_expire-sentry.id}",
+            "width": 12,
+            "height": 2,
+            "row": 4
+          },
+          {
+            "chart_id": "${signalform_time_chart.auth_proc_purge-expired-clients.id}",
+            "width": 12,
+            "height": 2,
+            "row": 6
+          }
+        ]
+      },
+      "aws-provisioner_procs": {
+        "name": "aws-provisioner Procs",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.aws-provisioner_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.aws-provisioner_proc_server.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          },
+          {
+            "chart_id": "${signalform_time_chart.aws-provisioner_proc_provisioner.id}",
+            "width": 12,
+            "height": 2,
+            "row": 4
+          }
+        ]
+      },
+      "github_procs": {
+        "name": "github Procs",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.github_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.github_proc_server.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          },
+          {
+            "chart_id": "${signalform_time_chart.github_proc_worker.id}",
+            "width": 12,
+            "height": 2,
+            "row": 4
+          },
+          {
+            "chart_id": "${signalform_time_chart.github_proc_syncInstallations.id}",
+            "width": 12,
+            "height": 2,
+            "row": 6
+          }
+        ]
+      },
+      "hooks_procs": {
+        "name": "hooks Procs",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.hooks_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.hooks_proc_server.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          },
+          {
+            "chart_id": "${signalform_time_chart.hooks_proc_scheduler.id}",
+            "width": 12,
+            "height": 2,
+            "row": 4
+          }
+        ]
+      },
+      "index_procs": {
+        "name": "index Procs",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.index_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.index_proc_server.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          },
+          {
+            "chart_id": "${signalform_time_chart.index_proc_handlers.id}",
+            "width": 12,
+            "height": 2,
+            "row": 4
+          },
+          {
+            "chart_id": "${signalform_time_chart.index_proc_expire.id}",
+            "width": 12,
+            "height": 2,
+            "row": 6
+          }
+        ]
+      },
+      "login_procs": {
+        "name": "login Procs",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.login_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.login_proc_server.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          },
+          {
+            "chart_id": "${signalform_time_chart.login_proc_scanner.id}",
+            "width": 12,
+            "height": 2,
+            "row": 4
+          }
+        ]
+      },
+      "notify_procs": {
+        "name": "notify Procs",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.notify_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.notify_proc_server.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          },
+          {
+            "chart_id": "${signalform_time_chart.notify_proc_irc.id}",
+            "width": 12,
+            "height": 2,
+            "row": 4
+          },
+          {
+            "chart_id": "${signalform_time_chart.notify_proc_handler.id}",
+            "width": 12,
+            "height": 2,
+            "row": 6
+          }
+        ]
+      },
+      "purge-cache_procs": {
+        "name": "purge-cache Procs",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.purge-cache_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.purge-cache_proc_server.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          },
+          {
+            "chart_id": "${signalform_time_chart.purge-cache_proc_expire-cache-purges.id}",
+            "width": 12,
+            "height": 2,
+            "row": 4
+          }
+        ]
+      },
+      "queue_procs": {
+        "name": "queue Procs",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.queue_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.queue_proc_server.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_proc_claim-reaper.id}",
+            "width": 12,
+            "height": 2,
+            "row": 4
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_proc_deadline-reaper.id}",
+            "width": 12,
+            "height": 2,
+            "row": 6
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_proc_dependency-resolver.id}",
+            "width": 12,
+            "height": 2,
+            "row": 8
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_proc_expire-artifacts.id}",
+            "width": 12,
+            "height": 2,
+            "row": 10
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_proc_expire-tasks.id}",
+            "width": 12,
+            "height": 2,
+            "row": 12
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_proc_expire-task-groups.id}",
+            "width": 12,
+            "height": 2,
+            "row": 14
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_proc_expire-task-group-members.id}",
+            "width": 12,
+            "height": 2,
+            "row": 16
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_proc_expire-task-group-sizes.id}",
+            "width": 12,
+            "height": 2,
+            "row": 18
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_proc_expire-task-dependency.id}",
+            "width": 12,
+            "height": 2,
+            "row": 20
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_proc_expire-task-requirement.id}",
+            "width": 12,
+            "height": 2,
+            "row": 22
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_proc_expire-queues.id}",
+            "width": 12,
+            "height": 2,
+            "row": 24
+          },
+          {
+            "chart_id": "${signalform_time_chart.queue_proc_expire-worker-info.id}",
+            "width": 12,
+            "height": 2,
+            "row": 26
+          }
+        ]
+      },
+      "secrets_procs": {
+        "name": "secrets Procs",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.secrets_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.secrets_proc_server.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          }
+        ]
+      },
+      "tc-treeherder_procs": {
+        "name": "tc-treeherder Procs",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.tc-treeherder_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.tc-treeherder_proc_server.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          }
+        ]
+      }
+    },
+    "signalform_time_chart": {
+      "auth_proc_server": {
+        "name": "auth > server (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-auth.process.server.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-auth.process.server.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-auth.process.server.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-auth.process.server.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-auth.process.server.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-auth.process.server.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-auth.process.server.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-auth.process.server.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-auth.process.server.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-auth.process.server.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-auth.process.server.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-auth.process.server.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-auth.process.server.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-auth.process.server.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "auth_proc_expire-sentry": {
+        "name": "auth > expire-sentry (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-auth.process.expire-sentry.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-auth.process.expire-sentry.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-auth.process.expire-sentry.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-auth.process.expire-sentry.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-auth.process.expire-sentry.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-auth.process.expire-sentry.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-auth.process.expire-sentry.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-auth.process.expire-sentry.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-auth.process.expire-sentry.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-auth.process.expire-sentry.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-auth.process.expire-sentry.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-auth.process.expire-sentry.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-auth.process.expire-sentry.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-auth.process.expire-sentry.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "auth_proc_purge-expired-clients": {
+        "name": "auth > purge-expired-clients (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-auth.process.purge-expired-clients.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-auth.process.purge-expired-clients.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-auth.process.purge-expired-clients.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-auth.process.purge-expired-clients.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-auth.process.purge-expired-clients.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-auth.process.purge-expired-clients.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-auth.process.purge-expired-clients.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-auth.process.purge-expired-clients.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-auth.process.purge-expired-clients.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-auth.process.purge-expired-clients.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-auth.process.purge-expired-clients.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-auth.process.purge-expired-clients.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-auth.process.purge-expired-clients.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-auth.process.purge-expired-clients.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "aws-provisioner_proc_server": {
+        "name": "aws-provisioner > server (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"aws-provisioner.process.server.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"aws-provisioner.process.server.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"aws-provisioner.process.server.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"aws-provisioner.process.server.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"aws-provisioner.process.server.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"aws-provisioner.process.server.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"aws-provisioner.process.server.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"aws-provisioner.process.server.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"aws-provisioner.process.server.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"aws-provisioner.process.server.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"aws-provisioner.process.server.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"aws-provisioner.process.server.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"aws-provisioner.process.server.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"aws-provisioner.process.server.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "aws-provisioner_proc_provisioner": {
+        "name": "aws-provisioner > provisioner (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"aws-provisioner.process.provisioner.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"aws-provisioner.process.provisioner.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"aws-provisioner.process.provisioner.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"aws-provisioner.process.provisioner.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"aws-provisioner.process.provisioner.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"aws-provisioner.process.provisioner.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"aws-provisioner.process.provisioner.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"aws-provisioner.process.provisioner.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"aws-provisioner.process.provisioner.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"aws-provisioner.process.provisioner.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"aws-provisioner.process.provisioner.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"aws-provisioner.process.provisioner.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"aws-provisioner.process.provisioner.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"aws-provisioner.process.provisioner.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "github_proc_server": {
+        "name": "github > server (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-github.process.server.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-github.process.server.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-github.process.server.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-github.process.server.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-github.process.server.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-github.process.server.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-github.process.server.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-github.process.server.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-github.process.server.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-github.process.server.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-github.process.server.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-github.process.server.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-github.process.server.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-github.process.server.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "github_proc_worker": {
+        "name": "github > worker (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-github.process.worker.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-github.process.worker.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-github.process.worker.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-github.process.worker.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-github.process.worker.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-github.process.worker.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-github.process.worker.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-github.process.worker.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-github.process.worker.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-github.process.worker.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-github.process.worker.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-github.process.worker.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-github.process.worker.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-github.process.worker.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "github_proc_syncInstallations": {
+        "name": "github > syncInstallations (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-github.process.syncInstallations.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-github.process.syncInstallations.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-github.process.syncInstallations.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-github.process.syncInstallations.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-github.process.syncInstallations.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-github.process.syncInstallations.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-github.process.syncInstallations.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-github.process.syncInstallations.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-github.process.syncInstallations.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-github.process.syncInstallations.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-github.process.syncInstallations.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-github.process.syncInstallations.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-github.process.syncInstallations.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-github.process.syncInstallations.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "hooks_proc_server": {
+        "name": "hooks > server (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-hooks.process.server.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-hooks.process.server.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-hooks.process.server.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-hooks.process.server.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-hooks.process.server.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-hooks.process.server.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-hooks.process.server.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-hooks.process.server.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-hooks.process.server.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-hooks.process.server.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-hooks.process.server.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-hooks.process.server.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-hooks.process.server.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-hooks.process.server.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "hooks_proc_scheduler": {
+        "name": "hooks > scheduler (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-hooks.process.scheduler.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-hooks.process.scheduler.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-hooks.process.scheduler.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-hooks.process.scheduler.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-hooks.process.scheduler.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-hooks.process.scheduler.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-hooks.process.scheduler.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-hooks.process.scheduler.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-hooks.process.scheduler.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-hooks.process.scheduler.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-hooks.process.scheduler.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-hooks.process.scheduler.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-hooks.process.scheduler.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-hooks.process.scheduler.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "index_proc_server": {
+        "name": "index > server (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-index.process.server.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-index.process.server.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-index.process.server.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-index.process.server.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-index.process.server.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-index.process.server.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-index.process.server.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-index.process.server.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-index.process.server.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-index.process.server.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-index.process.server.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-index.process.server.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-index.process.server.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-index.process.server.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "index_proc_handlers": {
+        "name": "index > handlers (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-index.process.handlers.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-index.process.handlers.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-index.process.handlers.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-index.process.handlers.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-index.process.handlers.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-index.process.handlers.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-index.process.handlers.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-index.process.handlers.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-index.process.handlers.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-index.process.handlers.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-index.process.handlers.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-index.process.handlers.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-index.process.handlers.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-index.process.handlers.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "index_proc_expire": {
+        "name": "index > expire (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-index.process.expire.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-index.process.expire.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-index.process.expire.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-index.process.expire.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-index.process.expire.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-index.process.expire.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-index.process.expire.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-index.process.expire.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-index.process.expire.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-index.process.expire.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-index.process.expire.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-index.process.expire.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-index.process.expire.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-index.process.expire.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "login_proc_server": {
+        "name": "login > server (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-login.process.server.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-login.process.server.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-login.process.server.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-login.process.server.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-login.process.server.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-login.process.server.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-login.process.server.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-login.process.server.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-login.process.server.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-login.process.server.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-login.process.server.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-login.process.server.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-login.process.server.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-login.process.server.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "login_proc_scanner": {
+        "name": "login > scanner (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-login.process.scanner.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-login.process.scanner.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-login.process.scanner.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-login.process.scanner.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-login.process.scanner.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-login.process.scanner.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-login.process.scanner.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-login.process.scanner.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-login.process.scanner.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-login.process.scanner.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-login.process.scanner.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-login.process.scanner.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-login.process.scanner.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-login.process.scanner.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "notify_proc_server": {
+        "name": "notify > server (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-notify.process.server.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-notify.process.server.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-notify.process.server.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-notify.process.server.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-notify.process.server.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-notify.process.server.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-notify.process.server.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-notify.process.server.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-notify.process.server.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-notify.process.server.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-notify.process.server.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-notify.process.server.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-notify.process.server.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-notify.process.server.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "notify_proc_irc": {
+        "name": "notify > irc (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-notify.process.irc.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-notify.process.irc.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-notify.process.irc.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-notify.process.irc.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-notify.process.irc.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-notify.process.irc.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-notify.process.irc.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-notify.process.irc.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-notify.process.irc.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-notify.process.irc.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-notify.process.irc.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-notify.process.irc.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-notify.process.irc.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-notify.process.irc.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "notify_proc_handler": {
+        "name": "notify > handler (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-notify.process.handler.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-notify.process.handler.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-notify.process.handler.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-notify.process.handler.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-notify.process.handler.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-notify.process.handler.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-notify.process.handler.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-notify.process.handler.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-notify.process.handler.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-notify.process.handler.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-notify.process.handler.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-notify.process.handler.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-notify.process.handler.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-notify.process.handler.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "purge-cache_proc_server": {
+        "name": "purge-cache > server (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"purge-cache.process.server.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"purge-cache.process.server.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"purge-cache.process.server.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"purge-cache.process.server.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"purge-cache.process.server.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"purge-cache.process.server.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"purge-cache.process.server.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"purge-cache.process.server.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"purge-cache.process.server.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"purge-cache.process.server.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"purge-cache.process.server.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"purge-cache.process.server.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"purge-cache.process.server.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"purge-cache.process.server.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "purge-cache_proc_expire-cache-purges": {
+        "name": "purge-cache > expire-cache-purges (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"purge-cache.process.expire-cache-purges.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"purge-cache.process.expire-cache-purges.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"purge-cache.process.expire-cache-purges.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"purge-cache.process.expire-cache-purges.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"purge-cache.process.expire-cache-purges.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"purge-cache.process.expire-cache-purges.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"purge-cache.process.expire-cache-purges.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"purge-cache.process.expire-cache-purges.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"purge-cache.process.expire-cache-purges.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"purge-cache.process.expire-cache-purges.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"purge-cache.process.expire-cache-purges.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"purge-cache.process.expire-cache-purges.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"purge-cache.process.expire-cache-purges.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"purge-cache.process.expire-cache-purges.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "queue_proc_server": {
+        "name": "queue > server (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.process.server.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-queue.process.server.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-queue.process.server.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-queue.process.server.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-queue.process.server.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-queue.process.server.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-queue.process.server.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-queue.process.server.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-queue.process.server.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-queue.process.server.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-queue.process.server.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-queue.process.server.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-queue.process.server.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-queue.process.server.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "queue_proc_claim-reaper": {
+        "name": "queue > claim-reaper (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.process.claim-reaper.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-queue.process.claim-reaper.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-queue.process.claim-reaper.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-queue.process.claim-reaper.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-queue.process.claim-reaper.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-queue.process.claim-reaper.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-queue.process.claim-reaper.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-queue.process.claim-reaper.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-queue.process.claim-reaper.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-queue.process.claim-reaper.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-queue.process.claim-reaper.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-queue.process.claim-reaper.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-queue.process.claim-reaper.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-queue.process.claim-reaper.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "queue_proc_deadline-reaper": {
+        "name": "queue > deadline-reaper (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.process.deadline-reaper.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-queue.process.deadline-reaper.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-queue.process.deadline-reaper.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-queue.process.deadline-reaper.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-queue.process.deadline-reaper.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-queue.process.deadline-reaper.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-queue.process.deadline-reaper.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-queue.process.deadline-reaper.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-queue.process.deadline-reaper.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-queue.process.deadline-reaper.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-queue.process.deadline-reaper.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-queue.process.deadline-reaper.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-queue.process.deadline-reaper.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-queue.process.deadline-reaper.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "queue_proc_dependency-resolver": {
+        "name": "queue > dependency-resolver (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.process.dependency-resolver.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-queue.process.dependency-resolver.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-queue.process.dependency-resolver.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-queue.process.dependency-resolver.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-queue.process.dependency-resolver.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-queue.process.dependency-resolver.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-queue.process.dependency-resolver.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-queue.process.dependency-resolver.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-queue.process.dependency-resolver.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-queue.process.dependency-resolver.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-queue.process.dependency-resolver.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-queue.process.dependency-resolver.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-queue.process.dependency-resolver.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-queue.process.dependency-resolver.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "queue_proc_expire-artifacts": {
+        "name": "queue > expire-artifacts (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.process.expire-artifacts.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-queue.process.expire-artifacts.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-queue.process.expire-artifacts.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-queue.process.expire-artifacts.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-queue.process.expire-artifacts.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-queue.process.expire-artifacts.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-queue.process.expire-artifacts.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-queue.process.expire-artifacts.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-queue.process.expire-artifacts.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-queue.process.expire-artifacts.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-queue.process.expire-artifacts.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-queue.process.expire-artifacts.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-queue.process.expire-artifacts.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-queue.process.expire-artifacts.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "queue_proc_expire-tasks": {
+        "name": "queue > expire-tasks (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.process.expire-tasks.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-queue.process.expire-tasks.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-queue.process.expire-tasks.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-queue.process.expire-tasks.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-queue.process.expire-tasks.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-queue.process.expire-tasks.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-queue.process.expire-tasks.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-queue.process.expire-tasks.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-queue.process.expire-tasks.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-queue.process.expire-tasks.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-queue.process.expire-tasks.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-queue.process.expire-tasks.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-queue.process.expire-tasks.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-queue.process.expire-tasks.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "queue_proc_expire-task-groups": {
+        "name": "queue > expire-task-groups (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.process.expire-task-groups.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-queue.process.expire-task-groups.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-queue.process.expire-task-groups.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-queue.process.expire-task-groups.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-queue.process.expire-task-groups.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-queue.process.expire-task-groups.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-queue.process.expire-task-groups.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-queue.process.expire-task-groups.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-queue.process.expire-task-groups.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-queue.process.expire-task-groups.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-queue.process.expire-task-groups.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-queue.process.expire-task-groups.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-queue.process.expire-task-groups.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-queue.process.expire-task-groups.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "queue_proc_expire-task-group-members": {
+        "name": "queue > expire-task-group-members (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.process.expire-task-group-members.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-queue.process.expire-task-group-members.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-queue.process.expire-task-group-members.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-queue.process.expire-task-group-members.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-queue.process.expire-task-group-members.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-queue.process.expire-task-group-members.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-queue.process.expire-task-group-members.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-queue.process.expire-task-group-members.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-queue.process.expire-task-group-members.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-queue.process.expire-task-group-members.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-queue.process.expire-task-group-members.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-queue.process.expire-task-group-members.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-queue.process.expire-task-group-members.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-queue.process.expire-task-group-members.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "queue_proc_expire-task-group-sizes": {
+        "name": "queue > expire-task-group-sizes (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.process.expire-task-group-sizes.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-queue.process.expire-task-group-sizes.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-queue.process.expire-task-group-sizes.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-queue.process.expire-task-group-sizes.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-queue.process.expire-task-group-sizes.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-queue.process.expire-task-group-sizes.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-queue.process.expire-task-group-sizes.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-queue.process.expire-task-group-sizes.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-queue.process.expire-task-group-sizes.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-queue.process.expire-task-group-sizes.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-queue.process.expire-task-group-sizes.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-queue.process.expire-task-group-sizes.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-queue.process.expire-task-group-sizes.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-queue.process.expire-task-group-sizes.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "queue_proc_expire-task-dependency": {
+        "name": "queue > expire-task-dependency (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.process.expire-task-dependency.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-queue.process.expire-task-dependency.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-queue.process.expire-task-dependency.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-queue.process.expire-task-dependency.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-queue.process.expire-task-dependency.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-queue.process.expire-task-dependency.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-queue.process.expire-task-dependency.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-queue.process.expire-task-dependency.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-queue.process.expire-task-dependency.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-queue.process.expire-task-dependency.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-queue.process.expire-task-dependency.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-queue.process.expire-task-dependency.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-queue.process.expire-task-dependency.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-queue.process.expire-task-dependency.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "queue_proc_expire-task-requirement": {
+        "name": "queue > expire-task-requirement (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.process.expire-task-requirement.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-queue.process.expire-task-requirement.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-queue.process.expire-task-requirement.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-queue.process.expire-task-requirement.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-queue.process.expire-task-requirement.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-queue.process.expire-task-requirement.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-queue.process.expire-task-requirement.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-queue.process.expire-task-requirement.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-queue.process.expire-task-requirement.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-queue.process.expire-task-requirement.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-queue.process.expire-task-requirement.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-queue.process.expire-task-requirement.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-queue.process.expire-task-requirement.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-queue.process.expire-task-requirement.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "queue_proc_expire-queues": {
+        "name": "queue > expire-queues (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.process.expire-queues.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-queue.process.expire-queues.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-queue.process.expire-queues.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-queue.process.expire-queues.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-queue.process.expire-queues.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-queue.process.expire-queues.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-queue.process.expire-queues.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-queue.process.expire-queues.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-queue.process.expire-queues.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-queue.process.expire-queues.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-queue.process.expire-queues.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-queue.process.expire-queues.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-queue.process.expire-queues.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-queue.process.expire-queues.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "queue_proc_expire-worker-info": {
+        "name": "queue > expire-worker-info (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-queue.process.expire-worker-info.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-queue.process.expire-worker-info.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-queue.process.expire-worker-info.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-queue.process.expire-worker-info.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-queue.process.expire-worker-info.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-queue.process.expire-worker-info.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-queue.process.expire-worker-info.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-queue.process.expire-worker-info.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-queue.process.expire-worker-info.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-queue.process.expire-worker-info.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-queue.process.expire-worker-info.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-queue.process.expire-worker-info.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-queue.process.expire-worker-info.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-queue.process.expire-worker-info.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "secrets_proc_server": {
+        "name": "secrets > server (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"taskcluster-secrets.process.server.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"taskcluster-secrets.process.server.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"taskcluster-secrets.process.server.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"taskcluster-secrets.process.server.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"taskcluster-secrets.process.server.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"taskcluster-secrets.process.server.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"taskcluster-secrets.process.server.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"taskcluster-secrets.process.server.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"taskcluster-secrets.process.server.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"taskcluster-secrets.process.server.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"taskcluster-secrets.process.server.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"taskcluster-secrets.process.server.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"taskcluster-secrets.process.server.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"taskcluster-secrets.process.server.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "tc-treeherder_proc_server": {
+        "name": "tc-treeherder > server (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"tc-treeherder.process.server.cpu.5m.max\", rollup=\"max\").publish(label=\"cpu_max\")\ndata(\"tc-treeherder.process.server.cpu.5m.p99\", rollup=\"max\").publish(label=\"cpu_p99\")\ndata(\"tc-treeherder.process.server.cpu.5m.p95\", rollup=\"max\").publish(label=\"cpu_p95\")\ndata(\"tc-treeherder.process.server.cpu.5m.p75\", rollup=\"max\").publish(label=\"cpu_p75\")\ndata(\"tc-treeherder.process.server.cpu.5m.p50\", rollup=\"max\").publish(label=\"cpu_p50\")\ndata(\"tc-treeherder.process.server.cpu.5m.p25\", rollup=\"max\").publish(label=\"cpu_p25\")\ndata(\"tc-treeherder.process.server.cpu.5m.min\", rollup=\"min\").publish(label=\"cpu_min\")\ndata(\"tc-treeherder.process.server.mem.5m.max\", rollup=\"max\").publish(label=\"memory_max\")\ndata(\"tc-treeherder.process.server.mem.5m.p99\", rollup=\"max\").publish(label=\"memory_p99\")\ndata(\"tc-treeherder.process.server.mem.5m.p95\", rollup=\"max\").publish(label=\"memory_p95\")\ndata(\"tc-treeherder.process.server.mem.5m.p75\", rollup=\"max\").publish(label=\"memory_p75\")\ndata(\"tc-treeherder.process.server.mem.5m.p50\", rollup=\"max\").publish(label=\"memory_p50\")\ndata(\"tc-treeherder.process.server.mem.5m.p25\", rollup=\"max\").publish(label=\"memory_p25\")\ndata(\"tc-treeherder.process.server.mem.5m.min\", rollup=\"min\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      }
+    }
+  }
+}

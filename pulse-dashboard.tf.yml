@@ -14,7 +14,7 @@ resource:
               chart_id: '$${signalform_time_chart.${project.name}_pulse_${project.exchanges[i]}.id}'
               width: 12
               height: 2
-              row: {$eval: 'i'}
+              row: {$eval: '(1 + i) * 2'}
   signalform_time_chart:
     $merge:
       $flattenDeep:

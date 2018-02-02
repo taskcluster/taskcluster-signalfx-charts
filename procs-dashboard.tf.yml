@@ -26,20 +26,20 @@ resource:
               name: "${project.name} > ${proc} (CPU / memory)"
               plot_type: LineChart
               program_text: |
-                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.max", rollup="max").publish(label="cpu_max")
-                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p99", rollup="max").publish(label="cpu_p99")
-                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p95", rollup="max").publish(label="cpu_p95")
-                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p75", rollup="max").publish(label="cpu_p75")
-                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p50", rollup="max").publish(label="cpu_p50")
-                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p25", rollup="max").publish(label="cpu_p25")
-                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.min", rollup="min").publish(label="cpu_min")
-                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.max", rollup="max").publish(label="memory_max")
-                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p99", rollup="max").publish(label="memory_p99")
-                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p95", rollup="max").publish(label="memory_p95")
-                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p75", rollup="max").publish(label="memory_p75")
-                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p50", rollup="max").publish(label="memory_p50")
-                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p25", rollup="max").publish(label="memory_p25")
-                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.min", rollup="min").publish(label="memory_min")
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.max", rollup="max", extrapolation="zero").publish(label="cpu_max")
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p99", rollup="max", extrapolation="zero").publish(label="cpu_p99")
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p95", rollup="max", extrapolation="zero").publish(label="cpu_p95")
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p75", rollup="max", extrapolation="zero").publish(label="cpu_p75")
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p50", rollup="max", extrapolation="zero").publish(label="cpu_p50")
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.p25", rollup="max", extrapolation="zero").publish(label="cpu_p25")
+                data("${project.prefix}.${project.processPrefix}.${proc}.cpu.5m.min", rollup="min", extrapolation="zero").publish(label="cpu_min")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.max", rollup="max", extrapolation="zero").publish(label="memory_max")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p99", rollup="max", extrapolation="zero").publish(label="memory_p99")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p95", rollup="max", extrapolation="zero").publish(label="memory_p95")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p75", rollup="max", extrapolation="zero").publish(label="memory_p75")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p50", rollup="max", extrapolation="zero").publish(label="memory_p50")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.p25", rollup="max", extrapolation="zero").publish(label="memory_p25")
+                data("${project.prefix}.${project.processPrefix}.${proc}.mem.5m.min", rollup="min", extrapolation="zero").publish(label="memory_min")
               show_data_markers: true
               time_range: "-1d"
               viz_options:

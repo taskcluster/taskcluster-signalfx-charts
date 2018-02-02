@@ -32,13 +32,13 @@ resource:
               data("${project.prefix}.${project.apiPrefix}.all.success.5m.count", rollup="sum", extrapolation="zero").publish(label="count")
               data("${project.prefix}.${project.apiPrefix}.all.client-error.5m.count", rollup="sum", extrapolation="zero").publish(label="client-errors")
               data("${project.prefix}.${project.apiPrefix}.all.server-error.5m.count", rollup="sum", extrapolation="zero").publish(label="server-errors")
-              data("${project.prefix}.${project.apiPrefix}.all.success.5m.max", rollup="max").publish(label="max")
-              data("${project.prefix}.${project.apiPrefix}.all.success.5m.p99", rollup="max").publish(label="p99")
-              data("${project.prefix}.${project.apiPrefix}.all.success.5m.p95", rollup="max").publish(label="p95")
-              data("${project.prefix}.${project.apiPrefix}.all.success.5m.p75", rollup="max").publish(label="p75")
-              data("${project.prefix}.${project.apiPrefix}.all.success.5m.p50", rollup="max").publish(label="p50")
-              data("${project.prefix}.${project.apiPrefix}.all.success.5m.p25", rollup="max").publish(label="p25")
-              data("${project.prefix}.${project.apiPrefix}.all.success.5m.min", rollup="min").publish(label="min")
+              data("${project.prefix}.${project.apiPrefix}.all.success.5m.max", rollup="max", extrapolation="zero").publish(label="max")
+              data("${project.prefix}.${project.apiPrefix}.all.success.5m.p99", rollup="max", extrapolation="zero").publish(label="p99")
+              data("${project.prefix}.${project.apiPrefix}.all.success.5m.p95", rollup="max", extrapolation="zero").publish(label="p95")
+              data("${project.prefix}.${project.apiPrefix}.all.success.5m.p75", rollup="max", extrapolation="zero").publish(label="p75")
+              data("${project.prefix}.${project.apiPrefix}.all.success.5m.p50", rollup="max", extrapolation="zero").publish(label="p50")
+              data("${project.prefix}.${project.apiPrefix}.all.success.5m.p25", rollup="max", extrapolation="zero").publish(label="p25")
+              data("${project.prefix}.${project.apiPrefix}.all.success.5m.min", rollup="min", extrapolation="zero").publish(label="min")
             show_data_markers: true
             time_range: "-1d"
             viz_options:
@@ -86,13 +86,13 @@ resource:
                 data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.count", rollup="sum", extrapolation="zero").publish(label="count")
                 data("${project.prefix}.${project.apiPrefix}.${method}.client-error.5m.count", rollup="sum", extrapolation="zero").publish(label="client-errors")
                 data("${project.prefix}.${project.apiPrefix}.${method}.server-error.5m.count", rollup="sum", extrapolation="zero").publish(label="server-errors")
-                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.max", rollup="max").publish(label="max")
-                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.p99", rollup="max").publish(label="p99")
-                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.p95", rollup="max").publish(label="p95")
-                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.p75", rollup="max").publish(label="p75")
-                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.p50", rollup="max").publish(label="p50")
-                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.p25", rollup="max").publish(label="p25")
-                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.min", rollup="min").publish(label="min")
+                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.max", rollup="max", extrapolation="zero").publish(label="max")
+                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.p99", rollup="max", extrapolation="zero").publish(label="p99")
+                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.p95", rollup="max", extrapolation="zero").publish(label="p95")
+                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.p75", rollup="max", extrapolation="zero").publish(label="p75")
+                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.p50", rollup="max", extrapolation="zero").publish(label="p50")
+                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.p25", rollup="max", extrapolation="zero").publish(label="p25")
+                data("${project.prefix}.${project.apiPrefix}.${method}.all.5m.min", rollup="min", extrapolation="zero").publish(label="min")
               show_data_markers: true
               time_range: "-1d"
               viz_options:

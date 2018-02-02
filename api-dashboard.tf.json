@@ -872,9 +872,9 @@
     },
     "signalform_time_chart": {
       "auth_api_all": {
-        "name": "auth ALL (duration / count)",
+        "name": "auth successful requests (duration / count)",
         "plot_type": "LineChart",
-        "program_text": "data(\"taskcluster-auth.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-auth.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-auth.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-auth.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-auth.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-auth.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-auth.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-auth.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-auth.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-auth.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "program_text": "data(\"taskcluster-auth.api.all.success.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-auth.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-auth.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-auth.api.all.success.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-auth.api.all.success.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-auth.api.all.success.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-auth.api.all.success.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-auth.api.all.success.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-auth.api.all.success.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-auth.api.all.success.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
@@ -2786,9 +2786,9 @@
         }
       },
       "aws-provisioner_api_all": {
-        "name": "aws-provisioner ALL (duration / count)",
+        "name": "aws-provisioner successful requests (duration / count)",
         "plot_type": "LineChart",
-        "program_text": "data(\"aws-provisioner.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"aws-provisioner.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"aws-provisioner.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"aws-provisioner.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"aws-provisioner.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"aws-provisioner.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"aws-provisioner.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"aws-provisioner.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"aws-provisioner.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"aws-provisioner.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "program_text": "data(\"aws-provisioner.api.all.success.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"aws-provisioner.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"aws-provisioner.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"aws-provisioner.api.all.success.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"aws-provisioner.api.all.success.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"aws-provisioner.api.all.success.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"aws-provisioner.api.all.success.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"aws-provisioner.api.all.success.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"aws-provisioner.api.all.success.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"aws-provisioner.api.all.success.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
@@ -3842,9 +3842,9 @@
         }
       },
       "github_api_all": {
-        "name": "github ALL (duration / count)",
+        "name": "github successful requests (duration / count)",
         "plot_type": "LineChart",
-        "program_text": "data(\"taskcluster-github.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-github.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-github.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-github.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-github.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-github.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-github.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-github.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-github.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-github.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "program_text": "data(\"taskcluster-github.api.all.success.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-github.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-github.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-github.api.all.success.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-github.api.all.success.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-github.api.all.success.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-github.api.all.success.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-github.api.all.success.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-github.api.all.success.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-github.api.all.success.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
@@ -4436,9 +4436,9 @@
         }
       },
       "hooks_api_all": {
-        "name": "hooks ALL (duration / count)",
+        "name": "hooks successful requests (duration / count)",
         "plot_type": "LineChart",
-        "program_text": "data(\"taskcluster-hooks.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-hooks.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-hooks.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-hooks.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-hooks.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-hooks.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-hooks.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-hooks.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-hooks.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-hooks.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "program_text": "data(\"taskcluster-hooks.api.all.success.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-hooks.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-hooks.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-hooks.api.all.success.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-hooks.api.all.success.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-hooks.api.all.success.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-hooks.api.all.success.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-hooks.api.all.success.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-hooks.api.all.success.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-hooks.api.all.success.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
@@ -5360,9 +5360,9 @@
         }
       },
       "index_api_all": {
-        "name": "index ALL (duration / count)",
+        "name": "index successful requests (duration / count)",
         "plot_type": "LineChart",
-        "program_text": "data(\"taskcluster-index.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-index.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-index.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-index.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-index.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-index.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-index.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-index.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-index.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-index.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "program_text": "data(\"taskcluster-index.api.all.success.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-index.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-index.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-index.api.all.success.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-index.api.all.success.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-index.api.all.success.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-index.api.all.success.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-index.api.all.success.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-index.api.all.success.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-index.api.all.success.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
@@ -5822,9 +5822,9 @@
         }
       },
       "login_api_all": {
-        "name": "login ALL (duration / count)",
+        "name": "login successful requests (duration / count)",
         "plot_type": "LineChart",
-        "program_text": "data(\"taskcluster-login.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-login.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-login.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-login.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-login.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-login.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-login.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-login.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-login.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-login.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "program_text": "data(\"taskcluster-login.api.all.success.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-login.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-login.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-login.api.all.success.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-login.api.all.success.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-login.api.all.success.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-login.api.all.success.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-login.api.all.success.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-login.api.all.success.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-login.api.all.success.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
@@ -6020,9 +6020,9 @@
         }
       },
       "notify_api_all": {
-        "name": "notify ALL (duration / count)",
+        "name": "notify successful requests (duration / count)",
         "plot_type": "LineChart",
-        "program_text": "data(\"taskcluster-notify.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-notify.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-notify.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-notify.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-notify.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-notify.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-notify.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-notify.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-notify.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-notify.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "program_text": "data(\"taskcluster-notify.api.all.success.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-notify.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-notify.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-notify.api.all.success.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-notify.api.all.success.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-notify.api.all.success.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-notify.api.all.success.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-notify.api.all.success.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-notify.api.all.success.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-notify.api.all.success.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
@@ -6350,9 +6350,9 @@
         }
       },
       "purge-cache_api_all": {
-        "name": "purge-cache ALL (duration / count)",
+        "name": "purge-cache successful requests (duration / count)",
         "plot_type": "LineChart",
-        "program_text": "data(\"purge-cache.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"purge-cache.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"purge-cache.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"purge-cache.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"purge-cache.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"purge-cache.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"purge-cache.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"purge-cache.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"purge-cache.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"purge-cache.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "program_text": "data(\"purge-cache.api.all.success.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"purge-cache.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"purge-cache.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"purge-cache.api.all.success.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"purge-cache.api.all.success.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"purge-cache.api.all.success.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"purge-cache.api.all.success.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"purge-cache.api.all.success.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"purge-cache.api.all.success.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"purge-cache.api.all.success.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
@@ -6680,9 +6680,9 @@
         }
       },
       "queue_api_all": {
-        "name": "queue ALL (duration / count)",
+        "name": "queue successful requests (duration / count)",
         "plot_type": "LineChart",
-        "program_text": "data(\"taskcluster-queue.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-queue.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-queue.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-queue.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-queue.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-queue.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-queue.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-queue.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-queue.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-queue.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "program_text": "data(\"taskcluster-queue.api.all.success.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-queue.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-queue.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-queue.api.all.success.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-queue.api.all.success.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-queue.api.all.success.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-queue.api.all.success.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-queue.api.all.success.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-queue.api.all.success.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-queue.api.all.success.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
@@ -8990,9 +8990,9 @@
         }
       },
       "secrets_api_all": {
-        "name": "secrets ALL (duration / count)",
+        "name": "secrets successful requests (duration / count)",
         "plot_type": "LineChart",
-        "program_text": "data(\"taskcluster-secrets.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-secrets.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-secrets.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-secrets.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-secrets.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-secrets.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-secrets.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-secrets.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-secrets.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-secrets.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "program_text": "data(\"taskcluster-secrets.api.all.success.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"taskcluster-secrets.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"taskcluster-secrets.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"taskcluster-secrets.api.all.success.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"taskcluster-secrets.api.all.success.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"taskcluster-secrets.api.all.success.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"taskcluster-secrets.api.all.success.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"taskcluster-secrets.api.all.success.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"taskcluster-secrets.api.all.success.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"taskcluster-secrets.api.all.success.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
@@ -9386,9 +9386,9 @@
         }
       },
       "tc-treeherder_api_all": {
-        "name": "tc-treeherder ALL (duration / count)",
+        "name": "tc-treeherder successful requests (duration / count)",
         "plot_type": "LineChart",
-        "program_text": "data(\"tc-treeherder.api.all.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"tc-treeherder.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"tc-treeherder.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"tc-treeherder.api.all.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"tc-treeherder.api.all.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"tc-treeherder.api.all.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"tc-treeherder.api.all.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"tc-treeherder.api.all.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"tc-treeherder.api.all.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"tc-treeherder.api.all.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
+        "program_text": "data(\"tc-treeherder.api.all.success.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"tc-treeherder.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"tc-treeherder.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"tc-treeherder.api.all.success.5m.max\", rollup=\"max\").publish(label=\"max\")\ndata(\"tc-treeherder.api.all.success.5m.p99\", rollup=\"max\").publish(label=\"p99\")\ndata(\"tc-treeherder.api.all.success.5m.p95\", rollup=\"max\").publish(label=\"p95\")\ndata(\"tc-treeherder.api.all.success.5m.p75\", rollup=\"max\").publish(label=\"p75\")\ndata(\"tc-treeherder.api.all.success.5m.p50\", rollup=\"max\").publish(label=\"p50\")\ndata(\"tc-treeherder.api.all.success.5m.p25\", rollup=\"max\").publish(label=\"p25\")\ndata(\"tc-treeherder.api.all.success.5m.min\", rollup=\"min\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [

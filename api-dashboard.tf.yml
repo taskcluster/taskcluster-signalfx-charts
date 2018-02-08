@@ -4,7 +4,7 @@ resource:
       $map: {$eval: projects}
       each(project):
         '${project.name}_api':
-          name: '${project.name} API'
+          name: 'API'
           time_range: '-1d'
           charts_resolution: 'highest'
           dashboard_group: '$${signalform_dashboard_group.${project.name}_metrics.id}'

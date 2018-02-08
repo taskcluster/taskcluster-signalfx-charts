@@ -1,0 +1,78 @@
+resource:
+  signalform_dashboard:
+    $merge:
+      $flattenDeep:
+        $map: {$eval: projects}
+        each(project):
+          $map: {$eval: project.tables}
+          each(table):
+            '${project.name}_azure_${table}':
+              name: 'table: ${table}'
+              time_range: '-1d'
+              charts_resolution: 'highest'
+              dashboard_group: '$${signalform_dashboard_group.${project.name}_metrics.id}'
+              chart:
+                $flattenDeep:
+                  $map: {$eval: 'range(len(azureOperations))'}
+                  each(i):
+                    chart_id: '$${signalform_time_chart.${project.name}_${table}_${azureOperations[i]}.id}'
+                    width: 12
+                    height: 2
+                    row: {$eval: '2 + (1 + i) * 2'}
+  signalform_time_chart:
+    $merge:
+      $flattenDeep:
+        $map: {$eval: projects}
+        each(project):
+          $map: {$eval: 'project.tables'}
+          each(table):
+              $map: {$eval: 'azureOperations'}
+              each(operation):
+                '${project.name}_${table}_${operation}':
+                  name: "${project.name}, table: ${table} - ${operation} duration / count"
+                  plot_type: LineChart
+                  program_text: |
+                    data("${project.prefix}.${project.tablePrefix}.${table}.${operation}.success.5m.count", rollup="sum", extrapolation="zero").publish(label="success_count")
+                    data("${project.prefix}.${project.tablePrefix}.${table}.${operation}.error.5m.count", rollup="sum", extrapolation="zero").publish(label="error_count")
+                    data("${project.prefix}.${project.tablePrefix}.${table}.${operation}.success.5m.max", rollup="max", extrapolation="zero").publish(label="max")
+                    data("${project.prefix}.${project.tablePrefix}.${table}.${operation}.success.5m.p99", rollup="max", extrapolation="zero").publish(label="p99")
+                    data("${project.prefix}.${project.tablePrefix}.${table}.${operation}.success.5m.p95", rollup="max", extrapolation="zero").publish(label="p95")
+                    data("${project.prefix}.${project.tablePrefix}.${table}.${operation}.success.5m.p75", rollup="max", extrapolation="zero").publish(label="p75")
+                    data("${project.prefix}.${project.tablePrefix}.${table}.${operation}.success.5m.p50", rollup="max", extrapolation="zero").publish(label="p50")
+                    data("${project.prefix}.${project.tablePrefix}.${table}.${operation}.success.5m.p25", rollup="max", extrapolation="zero").publish(label="p25")
+                    data("${project.prefix}.${project.tablePrefix}.${table}.${operation}.success.5m.min", rollup="min", extrapolation="zero").publish(label="min")
+                  show_data_markers: true
+                  time_range: "-1d"
+                  viz_options:
+                  - axis: right
+                    color: pink
+                    label: success_count
+                  - axis: right
+                    color: brown
+                    label: error_count
+                  - axis: left
+                    color: brown
+                    label: max
+                    plot_type: AreaChart
+                  - axis: left
+                    color: orange
+                    label: p99
+                  - axis: left
+                    color: yellow
+                    label: p95
+                  - axis: left
+                    color: green
+                    label: p75
+                  - axis: left
+                    color: green
+                    label: p50
+                  - axis: left
+                    color: green
+                    label: p25
+                  - axis: left
+                    color: green
+                    label: min
+                  axis_left:
+                    label: duration (ms)
+                  axis_right:
+                    label: '${operation}'

@@ -2,7 +2,7 @@
   "resource": {
     "signalform_dashboard": {
       "auth_procs": {
-        "name": "auth Procs",
+        "name": "Procs",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.auth_metrics.id}",
@@ -28,7 +28,7 @@
         ]
       },
       "aws-provisioner_procs": {
-        "name": "aws-provisioner Procs",
+        "name": "Procs",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.aws-provisioner_metrics.id}",
@@ -48,7 +48,7 @@
         ]
       },
       "github_procs": {
-        "name": "github Procs",
+        "name": "Procs",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.github_metrics.id}",
@@ -74,7 +74,7 @@
         ]
       },
       "hooks_procs": {
-        "name": "hooks Procs",
+        "name": "Procs",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.hooks_metrics.id}",
@@ -94,7 +94,7 @@
         ]
       },
       "index_procs": {
-        "name": "index Procs",
+        "name": "Procs",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.index_metrics.id}",
@@ -120,7 +120,7 @@
         ]
       },
       "login_procs": {
-        "name": "login Procs",
+        "name": "Procs",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.login_metrics.id}",
@@ -140,7 +140,7 @@
         ]
       },
       "notify_procs": {
-        "name": "notify Procs",
+        "name": "Procs",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.notify_metrics.id}",
@@ -166,7 +166,7 @@
         ]
       },
       "purge-cache_procs": {
-        "name": "purge-cache Procs",
+        "name": "Procs",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.purge-cache_metrics.id}",
@@ -186,7 +186,7 @@
         ]
       },
       "queue_procs": {
-        "name": "queue Procs",
+        "name": "Procs",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.queue_metrics.id}",
@@ -272,7 +272,7 @@
         ]
       },
       "secrets_procs": {
-        "name": "secrets Procs",
+        "name": "Procs",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.secrets_metrics.id}",
@@ -286,7 +286,7 @@
         ]
       },
       "tc-treeherder_procs": {
-        "name": "tc-treeherder Procs",
+        "name": "Procs",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.tc-treeherder_metrics.id}",

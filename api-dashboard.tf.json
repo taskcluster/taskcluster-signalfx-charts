@@ -2,7 +2,7 @@
   "resource": {
     "signalform_dashboard": {
       "auth_api": {
-        "name": "auth API",
+        "name": "API",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.auth_metrics.id}",
@@ -184,7 +184,7 @@
         ]
       },
       "aws-provisioner_api": {
-        "name": "aws-provisioner API",
+        "name": "API",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.aws-provisioner_metrics.id}",
@@ -288,7 +288,7 @@
         ]
       },
       "github_api": {
-        "name": "github API",
+        "name": "API",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.github_metrics.id}",
@@ -350,7 +350,7 @@
         ]
       },
       "hooks_api": {
-        "name": "hooks API",
+        "name": "API",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.hooks_metrics.id}",
@@ -442,7 +442,7 @@
         ]
       },
       "index_api": {
-        "name": "index API",
+        "name": "API",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.index_metrics.id}",
@@ -492,7 +492,7 @@
         ]
       },
       "login_api": {
-        "name": "login API",
+        "name": "API",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.login_metrics.id}",
@@ -518,7 +518,7 @@
         ]
       },
       "notify_api": {
-        "name": "notify API",
+        "name": "API",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.notify_metrics.id}",
@@ -556,7 +556,7 @@
         ]
       },
       "purge-cache_api": {
-        "name": "purge-cache API",
+        "name": "API",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.purge-cache_metrics.id}",
@@ -594,7 +594,7 @@
         ]
       },
       "queue_api": {
-        "name": "queue API",
+        "name": "API",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.queue_metrics.id}",
@@ -812,7 +812,7 @@
         ]
       },
       "secrets_api": {
-        "name": "secrets API",
+        "name": "API",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.secrets_metrics.id}",
@@ -856,7 +856,7 @@
         ]
       },
       "tc-treeherder_api": {
-        "name": "tc-treeherder API",
+        "name": "API",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.tc-treeherder_metrics.id}",

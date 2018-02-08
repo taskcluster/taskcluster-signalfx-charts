@@ -2,7 +2,7 @@
   "resource": {
     "signalform_dashboard": {
       "auth_pulse": {
-        "name": "auth Pulse Publishing",
+        "name": "Pulse",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.auth_metrics.id}",
@@ -46,7 +46,7 @@
         ]
       },
       "aws-provisioner_pulse": {
-        "name": "aws-provisioner Pulse Publishing",
+        "name": "Pulse",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.aws-provisioner_metrics.id}",
@@ -72,7 +72,7 @@
         ]
       },
       "github_pulse": {
-        "name": "github Pulse Publishing",
+        "name": "Pulse",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.github_metrics.id}",
@@ -98,35 +98,35 @@
         ]
       },
       "hooks_pulse": {
-        "name": "hooks Pulse Publishing",
+        "name": "Pulse",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.hooks_metrics.id}",
         "chart": []
       },
       "index_pulse": {
-        "name": "index Pulse Publishing",
+        "name": "Pulse",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.index_metrics.id}",
         "chart": []
       },
       "login_pulse": {
-        "name": "login Pulse Publishing",
+        "name": "Pulse",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.login_metrics.id}",
         "chart": []
       },
       "notify_pulse": {
-        "name": "notify Pulse Publishing",
+        "name": "Pulse",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.notify_metrics.id}",
         "chart": []
       },
       "purge-cache_pulse": {
-        "name": "purge-cache Pulse Publishing",
+        "name": "Pulse",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.purge-cache_metrics.id}",
@@ -140,7 +140,7 @@
         ]
       },
       "queue_pulse": {
-        "name": "queue Pulse Publishing",
+        "name": "Pulse",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.queue_metrics.id}",
@@ -196,14 +196,14 @@
         ]
       },
       "secrets_pulse": {
-        "name": "secrets Pulse Publishing",
+        "name": "Pulse",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.secrets_metrics.id}",
         "chart": []
       },
       "tc-treeherder_pulse": {
-        "name": "tc-treeherder Pulse Publishing",
+        "name": "Pulse",
         "time_range": "-1d",
         "charts_resolution": "highest",
         "dashboard_group": "${signalform_dashboard_group.tc-treeherder_metrics.id}",

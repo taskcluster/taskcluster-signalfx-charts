@@ -1,80 +1,128 @@
 defaults:
   # Defaults applied to all projects, each project config can overwrite these values
-  apiPrefix: api
-  publisherPrefix: publisher
-  processPrefix: process
+  apiPrefix:        api
+  publisherPrefix:  publisher
+  tablePrefix:      table
+  processPrefix:    process
+  references:       []
+  tables:           []
+  procs:            []
+azureOperations:
+ # create and delete table are utterly uninteresting
+ #- createTable
+ #- deleteTable
+ - getEntity
+ - queryEntities
+ - insertEntity
+ - updateEntity
+ - deleteEntity
 projects:
   # NOTE: index will generate 'methods', 'exchanges' and 'exchangePrefix'
   #       for project entries that specifies 'references'
-  - name: auth
-    prefix: taskcluster-auth # project given to tc-lib-monitor)
+
+  - name:       auth
+    prefix:     taskcluster-auth # project given to tc-lib-monitor)
     references:
       - Auth
       - AuthEvents
+    tables:
+      - clients
     procs:
       - server
       - expire-sentry
       - purge-expired-clients
-  - name: aws-provisioner
-    prefix: aws-provisioner
+
+  - name:       aws-provisioner
+    prefix:     aws-provisioner
     references:
       - AwsProvisioner
       - AwsProvisionerEvents
+    tables:
+      - workertypes
+      - secrets
     procs:
       - server
       - provisioner
-  - name: github
-    prefix: taskcluster-github
+
+  - name:       github
+    prefix:     taskcluster-github
     references:
       - Github
       - GithubEvents
+    tables:
+      - builds
+      - ownersdirectory
     procs:
       - server
       - worker
       - syncInstallations
-  - name: hooks
-    prefix: taskcluster-hooks
+
+  - name:       hooks
+    prefix:     taskcluster-hooks
     references:
       - Hooks
+    tables:
+      - hooks
     procs:
       - server
       - scheduler
-  - name: index
-    prefix: taskcluster-index
+
+  - name:       index
+    prefix:     taskcluster-index
     references:
       - Index
+    tables:
+      - indexedtasks
+      - namespaces
     procs:
       - server
       - handlers
       - expire
-  - name: login
-    prefix: taskcluster-login
+
+  - name:       login
+    prefix:     taskcluster-login
     references:
       - Login
     procs:
       - server
       - scanner
-  - name: notify
-    prefix: taskcluster-notify
+
+  - name:       notify
+    prefix:     taskcluster-notify
     references:
       - Notify
     procs:
       - server
       - irc
       - handler
-  - name: purge-cache
-    prefix: purge-cache
+
+  - name:       purge-cache
+    prefix:     purge-cache
     references:
       - PurgeCache
       - PurgeCacheEvents
+    tables:
+      - purgecaches
     procs:
       - server
       - expire-cache-purges
-  - name: queue
-    prefix: taskcluster-queue
+
+  - name:       queue
+    prefix:     taskcluster-queue
     references:
       - Queue
       - QueueEvents
+    tables:
+      - artifacts
+      - tasks
+      - taskgroups
+      - taskgroupmembers
+      - taskgroupactivesets
+      - taskrequirements
+      - taskdependencies
+      - provisioner
+      - workerType
+      - worker
     procs:
       - server
       - claim-reaper
@@ -89,14 +137,18 @@ projects:
       - expire-task-requirement
       - expire-queues
       - expire-worker-info
-  - name: secrets
-    prefix: taskcluster-secrets
+
+  - name:       secrets
+    prefix:     taskcluster-secrets
     references:
       - Secrets
+    tables:
+      - secrets
     procs:
       - server
-  - name: tc-treeherder
-    prefix: tc-treeherder
+
+  - name:       tc-treeherder
+    prefix:     tc-treeherder
     references:
       - TreeherderEvents
     procs:

@@ -215,6 +215,13 @@
             "row": 2
           }
         ]
+      },
+      "ec2-manager_pulse": {
+        "name": "Pulse",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.ec2-manager_metrics.id}",
+        "chart": []
       }
     },
     "signalform_time_chart": {

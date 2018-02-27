@@ -298,6 +298,20 @@
             "row": 2
           }
         ]
+      },
+      "ec2-manager_procs": {
+        "name": "Procs",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.ec2-manager_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.ec2-manager_proc_start.id}",
+            "width": 12,
+            "height": 2,
+            "row": 2
+          }
+        ]
       }
     },
     "signalform_time_chart": {
@@ -3263,6 +3277,93 @@
         "name": "tc-treeherder > server (CPU / memory)",
         "plot_type": "LineChart",
         "program_text": "data(\"tc-treeherder.process.server.cpu.5m.max\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"cpu_max\")\ndata(\"tc-treeherder.process.server.cpu.5m.p99\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"cpu_p99\")\ndata(\"tc-treeherder.process.server.cpu.5m.p95\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"cpu_p95\")\ndata(\"tc-treeherder.process.server.cpu.5m.p75\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"cpu_p75\")\ndata(\"tc-treeherder.process.server.cpu.5m.p50\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"cpu_p50\")\ndata(\"tc-treeherder.process.server.cpu.5m.p25\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"cpu_p25\")\ndata(\"tc-treeherder.process.server.cpu.5m.min\", rollup=\"min\", extrapolation=\"zero\").publish(label=\"cpu_min\")\ndata(\"tc-treeherder.process.server.mem.5m.max\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"memory_max\")\ndata(\"tc-treeherder.process.server.mem.5m.p99\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"memory_p99\")\ndata(\"tc-treeherder.process.server.mem.5m.p95\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"memory_p95\")\ndata(\"tc-treeherder.process.server.mem.5m.p75\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"memory_p75\")\ndata(\"tc-treeherder.process.server.mem.5m.p50\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"memory_p50\")\ndata(\"tc-treeherder.process.server.mem.5m.p25\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"memory_p25\")\ndata(\"tc-treeherder.process.server.mem.5m.min\", rollup=\"min\", extrapolation=\"zero\").publish(label=\"memory_min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "cpu_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "cpu_p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "cpu_p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "cpu_min"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "right",
+            "color": "blue",
+            "label": "memory_p99"
+          },
+          {
+            "axis": "right",
+            "color": "violet",
+            "label": "memory_p95"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p75"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p50"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_p25"
+          },
+          {
+            "axis": "right",
+            "color": "azure",
+            "label": "memory_min"
+          }
+        ],
+        "axis_left": {
+          "label": "CPU %"
+        },
+        "axis_right": {
+          "label": "Memory"
+        }
+      },
+      "ec2-manager_proc_start": {
+        "name": "ec2-manager > start (CPU / memory)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"ec2-manager.process.start.cpu.5m.max\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"cpu_max\")\ndata(\"ec2-manager.process.start.cpu.5m.p99\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"cpu_p99\")\ndata(\"ec2-manager.process.start.cpu.5m.p95\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"cpu_p95\")\ndata(\"ec2-manager.process.start.cpu.5m.p75\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"cpu_p75\")\ndata(\"ec2-manager.process.start.cpu.5m.p50\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"cpu_p50\")\ndata(\"ec2-manager.process.start.cpu.5m.p25\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"cpu_p25\")\ndata(\"ec2-manager.process.start.cpu.5m.min\", rollup=\"min\", extrapolation=\"zero\").publish(label=\"cpu_min\")\ndata(\"ec2-manager.process.start.mem.5m.max\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"memory_max\")\ndata(\"ec2-manager.process.start.mem.5m.p99\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"memory_p99\")\ndata(\"ec2-manager.process.start.mem.5m.p95\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"memory_p95\")\ndata(\"ec2-manager.process.start.mem.5m.p75\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"memory_p75\")\ndata(\"ec2-manager.process.start.mem.5m.p50\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"memory_p50\")\ndata(\"ec2-manager.process.start.mem.5m.p25\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"memory_p25\")\ndata(\"ec2-manager.process.start.mem.5m.min\", rollup=\"min\", extrapolation=\"zero\").publish(label=\"memory_min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [

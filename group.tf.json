@@ -58,6 +58,10 @@
         "name": "tc-treeherder metrics",
         "description": "Metrics for tc-treeherder"
       },
+      "ec2-manager_metrics": {
+        "name": "ec2-manager metrics",
+        "description": "Metrics for ec2-manager"
+      },
       "top_level_dashboard": {
         "name": "taskcluster metrics",
         "description": "Links to per-service dashboards"
@@ -67,7 +71,7 @@
       "project_links": {
         "name": "per-service dashboards",
         "description": "Links to all per-service dashboards",
-        "markdown": "* [auth](https://app.signalfx.com/#/dashboard/${signalform_dashboard.auth_api.id})\n* [aws-provisioner](https://app.signalfx.com/#/dashboard/${signalform_dashboard.aws-provisioner_api.id})\n* [github](https://app.signalfx.com/#/dashboard/${signalform_dashboard.github_api.id})\n* [hooks](https://app.signalfx.com/#/dashboard/${signalform_dashboard.hooks_api.id})\n* [index](https://app.signalfx.com/#/dashboard/${signalform_dashboard.index_api.id})\n* [login](https://app.signalfx.com/#/dashboard/${signalform_dashboard.login_api.id})\n* [notify](https://app.signalfx.com/#/dashboard/${signalform_dashboard.notify_api.id})\n* [purge-cache](https://app.signalfx.com/#/dashboard/${signalform_dashboard.purge-cache_api.id})\n* [queue](https://app.signalfx.com/#/dashboard/${signalform_dashboard.queue_api.id})\n* [secrets](https://app.signalfx.com/#/dashboard/${signalform_dashboard.secrets_api.id})\n* [tc-treeherder](https://app.signalfx.com/#/dashboard/${signalform_dashboard.tc-treeherder_api.id})\n\n"
+        "markdown": "* [auth](https://app.signalfx.com/#/dashboard/${signalform_dashboard.auth_api.id})\n* [aws-provisioner](https://app.signalfx.com/#/dashboard/${signalform_dashboard.aws-provisioner_api.id})\n* [github](https://app.signalfx.com/#/dashboard/${signalform_dashboard.github_api.id})\n* [hooks](https://app.signalfx.com/#/dashboard/${signalform_dashboard.hooks_api.id})\n* [index](https://app.signalfx.com/#/dashboard/${signalform_dashboard.index_api.id})\n* [login](https://app.signalfx.com/#/dashboard/${signalform_dashboard.login_api.id})\n* [notify](https://app.signalfx.com/#/dashboard/${signalform_dashboard.notify_api.id})\n* [purge-cache](https://app.signalfx.com/#/dashboard/${signalform_dashboard.purge-cache_api.id})\n* [queue](https://app.signalfx.com/#/dashboard/${signalform_dashboard.queue_api.id})\n* [secrets](https://app.signalfx.com/#/dashboard/${signalform_dashboard.secrets_api.id})\n* [tc-treeherder](https://app.signalfx.com/#/dashboard/${signalform_dashboard.tc-treeherder_api.id})\n* [ec2-manager](https://app.signalfx.com/#/dashboard/${signalform_dashboard.ec2-manager_api.id})\n\n"
       }
     }
   }

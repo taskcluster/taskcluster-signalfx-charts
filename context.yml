@@ -153,3 +153,10 @@ projects:
       - TreeherderEvents
     procs:
       - server
+
+  - name:       ec2-manager
+    prefix:     ec2-manager
+    references: []
+    tables: []
+    procs:
+      - start

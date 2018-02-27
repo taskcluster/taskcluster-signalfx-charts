@@ -868,6 +868,20 @@
             "row": 1
           }
         ]
+      },
+      "ec2-manager_api": {
+        "name": "API",
+        "time_range": "-1d",
+        "charts_resolution": "highest",
+        "dashboard_group": "${signalform_dashboard_group.ec2-manager_metrics.id}",
+        "chart": [
+          {
+            "chart_id": "${signalform_time_chart.ec2-manager_api_all.id}",
+            "width": 12,
+            "height": 2,
+            "row": 1
+          }
+        ]
       }
     },
     "signalform_time_chart": {
@@ -9389,6 +9403,72 @@
         "name": "tc-treeherder successful requests (duration / count)",
         "plot_type": "LineChart",
         "program_text": "data(\"tc-treeherder.api.all.success.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"tc-treeherder.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"tc-treeherder.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"tc-treeherder.api.all.success.5m.max\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"max\")\ndata(\"tc-treeherder.api.all.success.5m.p99\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"p99\")\ndata(\"tc-treeherder.api.all.success.5m.p95\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"p95\")\ndata(\"tc-treeherder.api.all.success.5m.p75\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"p75\")\ndata(\"tc-treeherder.api.all.success.5m.p50\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"p50\")\ndata(\"tc-treeherder.api.all.success.5m.p25\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"p25\")\ndata(\"tc-treeherder.api.all.success.5m.min\", rollup=\"min\", extrapolation=\"zero\").publish(label=\"min\")\n",
+        "show_data_markers": true,
+        "time_range": "-1d",
+        "viz_options": [
+          {
+            "axis": "right",
+            "color": "pink",
+            "label": "count"
+          },
+          {
+            "axis": "right",
+            "color": "emerald",
+            "label": "client-errors"
+          },
+          {
+            "axis": "right",
+            "color": "brown",
+            "label": "server-errors"
+          },
+          {
+            "axis": "left",
+            "color": "brown",
+            "label": "max",
+            "plot_type": "AreaChart"
+          },
+          {
+            "axis": "left",
+            "color": "orange",
+            "label": "p99"
+          },
+          {
+            "axis": "left",
+            "color": "yellow",
+            "label": "p95"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p75"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p50"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "p25"
+          },
+          {
+            "axis": "left",
+            "color": "green",
+            "label": "min"
+          }
+        ],
+        "axis_left": {
+          "label": "duration (ms)"
+        },
+        "axis_right": {
+          "label": "requests"
+        }
+      },
+      "ec2-manager_api_all": {
+        "name": "ec2-manager successful requests (duration / count)",
+        "plot_type": "LineChart",
+        "program_text": "data(\"ec2-manager.api.all.success.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"count\")\ndata(\"ec2-manager.api.all.client-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"client-errors\")\ndata(\"ec2-manager.api.all.server-error.5m.count\", rollup=\"sum\", extrapolation=\"zero\").publish(label=\"server-errors\")\ndata(\"ec2-manager.api.all.success.5m.max\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"max\")\ndata(\"ec2-manager.api.all.success.5m.p99\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"p99\")\ndata(\"ec2-manager.api.all.success.5m.p95\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"p95\")\ndata(\"ec2-manager.api.all.success.5m.p75\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"p75\")\ndata(\"ec2-manager.api.all.success.5m.p50\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"p50\")\ndata(\"ec2-manager.api.all.success.5m.p25\", rollup=\"max\", extrapolation=\"zero\").publish(label=\"p25\")\ndata(\"ec2-manager.api.all.success.5m.min\", rollup=\"min\", extrapolation=\"zero\").publish(label=\"min\")\n",
         "show_data_markers": true,
         "time_range": "-1d",
         "viz_options": [
